@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #444;
+  /* border: 1px solid orangered; */
+  font-family: "Raleway", sans-serif;
+}
+html {
+  background-color: #e6e7e9;
+}
+
+.cover {
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #e6e7e9;
+  background-image: url("./801C57F4-4193-4753-B49B-DDBCBB5F5E64_1_201_a.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 2; */
+}
+.a4-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+}
+.left {
+  display: block;
+  min-width: 15vw;
+}
+.right {
+  display: block;
+  min-width: 15vw;
+}
+.a4 {
+  z-index: 100;
+  background: #f7f7f7;
+  margin: 200px 0;
+  height: 1000px;
+  width: 800px;
+
+  box-shadow: -2.8px 2.8px 10.1px -26px rgba(0, 0, 0, 0.031),
+    -6.7px 6.7px 24.3px -26px rgba(0, 0, 0, 0.044),
+    -12.5px 12.5px 45.7px -26px rgba(0, 0, 0, 0.055),
+    -22.3px 22.3px 81.5px -26px rgba(0, 0, 0, 0.066),
+    -41.8px 41.8px 152.5px -26px rgba(0, 0, 0, 0.079),
+    -100px 100px 365px -26px rgba(0, 0, 0, 0.11);
+}
+
+p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.3rem;
+}
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  letter-spacing: 0.2rem;
+}
+h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+ul {
+  padding-left: 17px;
+  margin-bottom: 40px;
+}
+li {
+  color: #777;
+
+  font-size: 0.9rem;
+  padding-left: 10px;
+}
+
+.footer {
+  height: 200px;
+  margin-top: 300px;
+}
+
+.a4 .wrapper {
+  padding: 80px 50px;
+}
+
+.a4 header {
+  /* background-color: darkgray; */
+  margin-bottom: 40px;
+  letter-spacing: 0.7rem;
+}
+
+.a4 header h1 {
+  padding-left: 20px;
+  font-weight: 100;
+  font-size: 2.8rem;
+}
+.a4 header h1 span {
+  padding: 0px;
+}
+.a4 .content-wrapper {
+  /* background-color: darkgray; */
+  display: flex;
+}
+
+.a4 .content-wrapper aside {
+  padding: 0 20px;
+  flex: 4;
+}
+.a4 .content-wrapper .content {
+  border-left: 2px solid #333;
+  padding: 0 20px;
+  flex: 7;
+}
+.a4 .content-wrapper aside ul {
+  margin-bottom: 70px;
+}
+.a4 .content-wrapper aside li {
+  margin-bottom: 5px;
+}
+.a4 .content-wrapper aside h2 {
+  margin-bottom: 40px;
+  /* margin-top: 20px; */
+}
+.a4 .content-wrapper aside h3 {
+  margin-top: 20px;
+}
+.a4 .content-wrapper .content ul:last-child {
+  margin-bottom: 0;
+}
