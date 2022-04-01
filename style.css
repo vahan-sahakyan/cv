@@ -1,27 +1,46 @@
+@font-face {
+  font-family: 'Neutra Text Bold';
+  src: url(./fonts/Neutra\ Text\ Bold.otf);
+}
+
 * {
   padding: 0;
   margin: 0;
   color: #444;
   /* border: 1px solid orangered; */
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 html {
   background-color: #e6e7e9;
+  /* background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px; */
+
+  /* 
+  background-image: url(https://thegrue.com/wp-content/themes/gridmag/assets/images/background.png);
+  background-position: left top;
+  background-size: auto;
+  background-repeat: repeat; */
+
+  background-color: #ddd;
+  background-image: radial-gradient(#777 10%, transparent 11%),
+    radial-gradient(#777 10%, transparent 11%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  background-repeat: repeat;
 }
 
 .cover {
   z-index: 0;
   height: 100vh;
   width: 100%;
-  background-color: #e6e7e9;
-  background-image: url("./801C57F4-4193-4753-B49B-DDBCBB5F5E64_1_201_a.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* opacity: 2; */
 }
 .a4-grid {
   display: grid;
-  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .left {
   display: block;
@@ -35,15 +54,98 @@ html {
   z-index: 100;
   background: #f7f7f7;
   margin: 200px 0;
-  height: 1000px;
-  width: 800px;
+  /* height: 1000px;
+  width: 800px; */
+  height: 63rem; /* a4 ratio 1.4 */
+  width: 45rem;
 
-  box-shadow: -2.8px 2.8px 10.1px -26px rgba(0, 0, 0, 0.031),
-    -6.7px 6.7px 24.3px -26px rgba(0, 0, 0, 0.044),
-    -12.5px 12.5px 45.7px -26px rgba(0, 0, 0, 0.055),
-    -22.3px 22.3px 81.5px -26px rgba(0, 0, 0, 0.066),
-    -41.8px 41.8px 152.5px -26px rgba(0, 0, 0, 0.079),
-    -100px 100px 365px -26px rgba(0, 0, 0, 0.11);
+  box-shadow: 20px 13px 30px #0002;
+
+  position: relative;
+}
+
+.glass {
+  z-index: 200;
+  position: absolute;
+  height: 95px;
+  /* width: 195px; */
+  /* top: 70px; */
+  left: -155px;
+  bottom: 30px;
+  left: -70px;
+  background-color: #46d7d2aa;
+  background-color: #ffff77aa;
+  backdrop-filter: blur(5px);
+  box-shadow: 10px 5px 7px #0001;
+  /*  */
+  box-sizing: border-box;
+  line-height: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.phone,
+.email {
+  color: #333;
+  font-size: 20px;
+  flex: 1;
+}
+/* .phone {
+  flex: 1;
+}
+.email {
+  flex: 1;
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar,
+.full-name {
+  flex: 1 1 1;
+}
+.avatar {
+  margin-right: 1rem;
+  z-index: 200;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  backdrop-filter: blur(5px);
+  box-shadow: 10px 5px 14px #0004;
+
+  background-image: url('./img/8BE0C012-6F14-4AA2-9A56-33C0B809DAE0_1_201_a.jpeg');
+  background-repeat: no-repeat;
+  background-size: 103%;
+}
+
+.full-name {
+  font-family: 'Neutra Text Bold';
+  font-family: 'Arvo', Serif;
+  font-family: 'Roboto', Sans-Serif;
+  font-family: 'Ruda', Sans-Serif;
+  font-family: 'Merriweather', Serif;
+  font-family: 'Rubik', Sans-Serif;
+
+  /* Font-Size: 44px; */
+  padding-left: 20px;
+  font-weight: 100;
+  font-size: 2.8rem;
+}
+.full-name span {
+  font-family: 'Neutra Text Bold';
+  font-family: 'Arvo', Serif;
+  font-family: 'Roboto', Sans-Serif;
+  font-family: 'Ruda', Sans-Serif;
+  font-family: 'Merriweather', Serif;
+  font-family: 'Rubik', Sans-Serif;
+
+  /* Font-Size: 44px; */
+  padding: 0px;
 }
 
 p {
@@ -84,23 +186,15 @@ li {
 }
 
 .a4 .wrapper {
-  padding: 80px 50px;
+  padding: 60px 50px;
 }
 
 .a4 header {
   /* background-color: darkgray; */
   margin-bottom: 40px;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.3rem;
 }
 
-.a4 header h1 {
-  padding-left: 20px;
-  font-weight: 100;
-  font-size: 2.8rem;
-}
-.a4 header h1 span {
-  padding: 0px;
-}
 .a4 .content-wrapper {
   /* background-color: darkgray; */
   display: flex;
@@ -122,12 +216,18 @@ li {
   margin-bottom: 5px;
 }
 .a4 .content-wrapper aside h2 {
-  margin-bottom: 40px;
-  /* margin-top: 20px; */
+  margin-bottom: 1rem;
 }
 .a4 .content-wrapper aside h3 {
   margin-top: 20px;
 }
 .a4 .content-wrapper .content ul:last-child {
   margin-bottom: 0;
+}
+
+.skills h2 {
+  margin-bottom: 0.2rem;
+}
+.skills h3 {
+  margin-bottom: 1.2rem;
 }
