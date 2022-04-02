@@ -20,3 +20,22 @@ const addGoTo = (element, url) => {
 };
 addGoTo('.ln-svg', links.linkedin);
 addGoTo('.gh-svg', links.github);
+
+const message = document.querySelector('.clipboard-message');
+let clipboardTimer;
+['.email', '.phone'].forEach(el => {
+  document.querySelector(el).addEventListener('click', function () {
+    //
+    copyToClipboard(el);
+
+    message.textContent = `${
+      el[1].toUpperCase() + el.slice(2)
+    } Copied Successfully`;
+    message.classList.remove('hidden');
+
+    clearTimeout(clipboardTimer);
+    clipboardTimer = setTimeout(function () {
+      message.classList.add('hidden');
+    }, 1600);
+  });
+});
