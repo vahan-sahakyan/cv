@@ -47,6 +47,7 @@ html {
 .a4-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 .left {
   display: block;
