@@ -105,6 +105,7 @@ html {
   background-color: #ccc1;
   /* border-radius: 10% / 1.5%; */
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   box-shadow: 15px 15px 40px #0003;
 }
 .clipboard-message {
@@ -140,6 +141,7 @@ html {
   background-color: #ffff77aa;
   background-color: #ffee22dd;
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   box-shadow: 10px 5px 7px #0001;
   /*  */
   box-sizing: border-box;
@@ -190,6 +192,7 @@ header {
   height: 140px;
   width: 140px;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   box-shadow: 10px 5px 14px #0004;
 
   background-image: url('./img/8BE0C012-6F14-4AA2-9A56-33C0B809DAE0_1_201_a.jpeg');
