@@ -51,11 +51,11 @@ html {
 }
 .left {
   display: block;
-  min-width: 15vw;
+  min-width: 25vw;
 }
 .right {
   display: block;
-  min-width: 15vw;
+  min-width: 10vw;
 }
 .a4 {
   z-index: 100;
