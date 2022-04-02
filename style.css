@@ -72,15 +72,27 @@ html {
 .glass {
   z-index: 200;
   position: absolute;
+  height: 63rem;
+  width: 9rem;
+  left: -100px;
+  top: 5rem;
+  background-color: #ccc1;
+  border-radius: 17% / 3%;
+  backdrop-filter: blur(17px);
+  box-shadow: 10px 10px 50px #0003;
+}
+.sticker {
+  z-index: 200;
+  position: absolute;
   height: 95px;
   /* width: 195px; */
   /* top: 70px; */
-  bottom: 30px;
+  bottom: -45px;
   left: -70px;
   background-color: #46d7d2aa;
   background-color: #ffff77aa;
   backdrop-filter: blur(5px);
-  box-shadow: 10px 5px 7px #0001;
+  box-shadow: 10px 5px 17px #0001;
   /*  */
   box-sizing: border-box;
   line-height: 30px;
