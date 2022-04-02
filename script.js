@@ -21,8 +21,8 @@ const addGoTo = (element, url) => {
 addGoTo('.ln-svg', links.linkedin);
 addGoTo('.gh-svg', links.github);
 
-const message = document.querySelector('.clipboard-message');
 let clipboardTimer;
+const message = document.querySelector('.clipboard-message');
 ['.email', '.phone'].forEach(el => {
   document.querySelector(el).addEventListener('click', function () {
     //
