@@ -24,17 +24,52 @@
         <div class="middle">
           <!-- The A4 CV Paper -->
           <div class="a4">
-            <div class="glass"></div>
+            <div class="glass">
+              <a href="">
+                <img
+                  class="ln-svg"
+                  fill="currentColor"
+                  src="./svg/social-48px-glyph-1_logo-linkedin.svg"
+                  alt="LinkedIn"
+                  title="Go to LinkedIn"
+                />
+              </a>
+              <a href="">
+                <img
+                  class="gh-svg"
+                  fill="currentColor"
+                  src="./svg/social-48px-glyph-1_logo-github.svg"
+                  alt="GitHub"
+                  title="Go to GitHub"
+                />
+              </a>
+            </div>
             <div class="sticker">
-              <div class="phone">+374 95 27 68 27</div>
-              <div class="email">vahan.sahakyan1996@gmail.com</div>
+              <div
+                onclick="copy('.phone')"
+                title="Copy to Clipboard"
+                class="phone"
+              >
+                +374 95 27 68 27
+              </div>
+              <div
+                onclick="copy('.email')"
+                title="Copy to Clipboard"
+                class="email"
+              >
+                vahan.sahakyan1996@gmail.com
+              </div>
             </div>
             <div class="wrapper">
               <header>
-                <h1 class="full-name">
-                  VAHAN <br />
-                  <span>SAHAKYAN</span>
-                </h1>
+                <div class="title">
+                  <h1 class="full-name">
+                    VAHAN <br />
+                    <span>SAHAKYAN</span>
+                  </h1>
+                  <h4 class="profession">JavaScript Developer</h4>
+                  <div class="triangle"></div>
+                </div>
                 <div class="avatar"></div>
               </header>
               <div class="content-wrapper">
@@ -120,5 +155,27 @@
       <!--  -->
       <div class="footer"></div>
     </div>
+    <script>
+      const copy = element => {
+        let range = document.createRange();
+        range.selectNode(document.querySelector(element));
+        window.getSelection().removeAllRanges(); // clear current selection
+        window.getSelection().addRange(range); // to select text
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges(); // to deselect
+      };
+      const links = {
+        github: 'https://github.com/vahan-sahakyan',
+        linkedin: 'https://www.linkedin.com/in/vahan-sahakyan/',
+      };
+      const addGoTo = (element, url) => {
+        document.querySelector(element).addEventListener('click', e => {
+          e.preventDefault();
+          window.open(url);
+        });
+      };
+      addGoTo('.ln-svg', links.linkedin);
+      addGoTo('.gh-svg', links.github);
+    </script>
   </body>
 </html>

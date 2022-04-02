@@ -30,9 +30,10 @@ html {
   background-size: auto;
   background-repeat: repeat; */
 
-  background-color: #bdea;
-  background-image: radial-gradient(#777 10%, transparent 11%),
-    radial-gradient(#777 10%, transparent 11%);
+  background-color: #bde;
+  background-color: #2f2f2f33;
+  background-image: radial-gradient(#bbb 10%, transparent 11%),
+    radial-gradient(#bbb 10%, transparent 11%);
   background-size: 10px 10px;
   background-position: 0 0, 5px 5px;
   background-repeat: repeat;
@@ -69,17 +70,41 @@ html {
   position: relative;
 }
 
+.gh-svg,
+.ln-svg {
+  opacity: 0.7;
+}
+.gh-svg:hover {
+  cursor: pointer;
+  opacity: 1;
+  filter: invert(13%) sepia(20%) saturate(468%) hue-rotate(173deg)
+    brightness(94%) contrast(91%);
+}
+.ln-svg:hover {
+  cursor: pointer;
+  opacity: 1;
+  filter: invert(36%) sepia(86%) saturate(6494%) hue-rotate(185deg)
+    brightness(96%) contrast(100%);
+}
 .glass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 11rem 0;
+  box-sizing: border-box;
+  /* ///// */
   z-index: 200;
   position: absolute;
   height: 63rem;
-  width: 9rem;
-  left: -100px;
+  width: 7rem;
+  left: -80px;
   top: 5rem;
   background-color: #ccc1;
-  border-radius: 17% / 3%;
-  backdrop-filter: blur(17px);
-  box-shadow: 10px 10px 50px #0003;
+  /* border-radius: 10% / 1.5%; */
+  backdrop-filter: blur(18px);
+  box-shadow: 15px 15px 40px #0003;
 }
 .sticker {
   z-index: 200;
@@ -88,15 +113,21 @@ html {
   /* width: 195px; */
   /* top: 70px; */
   bottom: -45px;
-  left: -70px;
-  background-color: #46d7d2aa;
+  left: -50px;
+  background-color: #fff7;
+  background-color: #ffcb74dd;
+  background-color: #fbbc0566;
+  background-color: #4285f4bb;
+  background-color: #46d7d288;
+  background-color: #ea4335ee;
   background-color: #ffff77aa;
-  backdrop-filter: blur(5px);
-  box-shadow: 10px 5px 17px #0001;
+  background-color: #ffee22dd;
+  backdrop-filter: blur(3px);
+  box-shadow: 10px 5px 7px #0001;
   /*  */
   box-sizing: border-box;
   line-height: 30px;
-  padding: 20px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -104,9 +135,19 @@ html {
 }
 .phone,
 .email {
-  color: #333;
+  cursor: pointer;
+  color: #222;
+  font-family: 'ProductSans Bold';
   font-size: 1.2rem;
   flex: 1;
+}
+.phone:hover,
+.email:hover {
+  opacity: 0.5;
+}
+.phone:active,
+.email:active {
+  opacity: 0.7;
 }
 /* .phone {
   flex: 1;
@@ -143,19 +184,38 @@ header {
   font-family: 'Rubik', Sans-Serif;
   font-family: 'ProductSans Bold';
 
-  /* Font-Size: 44px; */
-  padding-left: 20px;
+  margin-left: 20px;
   font-weight: 100;
   font-size: 2.8rem;
 }
 .full-name span {
   font-family: 'Rubik', Sans-Serif;
-  font-family: 'ProductSans Bold';
+  font-family: 'ProductSans';
 
-  /* Font-Size: 44px; */
   padding: 0px;
 }
-
+.profession {
+  font-family: 'ProductSans';
+  /* margin: 0; */
+  margin-bottom: 0;
+  margin-left: 20px;
+  padding: 3px 20px;
+  font-size: 1.2rem;
+  color: #222;
+  background-color: #ffee22;
+}
+.title {
+  position: relative;
+}
+.triangle {
+  position: absolute;
+  right: -29px;
+  bottom: -0.8px;
+  width: 0;
+  height: 0;
+  border-top: 29.5px solid #ffee22;
+  border-right: 29.5px solid transparent;
+}
 p {
   color: #777;
   font-size: 0.9rem;
