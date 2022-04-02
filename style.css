@@ -78,13 +78,13 @@ html {
   cursor: pointer;
   opacity: 1;
   filter: invert(13%) sepia(20%) saturate(468%) hue-rotate(173deg)
-    brightness(94%) contrast(91%);
+    brightness(54%) contrast(91%);
 }
 .ln-svg:hover {
   cursor: pointer;
   opacity: 1;
-  filter: invert(36%) sepia(86%) saturate(6494%) hue-rotate(185deg)
-    brightness(96%) contrast(100%);
+  filter: invert(29%) sepia(74%) saturate(1221%) hue-rotate(194deg)
+    brightness(67%) contrast(88%);
 }
 .glass {
   display: flex;

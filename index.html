@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400i|Rubik"
       rel="stylesheet"
     />
+    <script defer src="./script.js"></script>
     <title>Curriculum Vitae | Vahan Sahakyan</title>
   </head>
   <body>
@@ -46,14 +47,14 @@
             </div>
             <div class="sticker">
               <div
-                onclick="copy('.phone')"
+                onclick="copyToClipboard('.phone')"
                 title="Copy to Clipboard"
                 class="phone"
               >
                 +374 95 27 68 27
               </div>
               <div
-                onclick="copy('.email')"
+                onclick="copyToClipboard('.email')"
                 title="Copy to Clipboard"
                 class="email"
               >
@@ -155,27 +156,5 @@
       <!--  -->
       <div class="footer"></div>
     </div>
-    <script>
-      const copy = element => {
-        let range = document.createRange();
-        range.selectNode(document.querySelector(element));
-        window.getSelection().removeAllRanges(); // clear current selection
-        window.getSelection().addRange(range); // to select text
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges(); // to deselect
-      };
-      const links = {
-        github: 'https://github.com/vahan-sahakyan',
-        linkedin: 'https://www.linkedin.com/in/vahan-sahakyan/',
-      };
-      const addGoTo = (element, url) => {
-        document.querySelector(element).addEventListener('click', e => {
-          e.preventDefault();
-          window.open(url);
-        });
-      };
-      addGoTo('.ln-svg', links.linkedin);
-      addGoTo('.gh-svg', links.github);
-    </script>
   </body>
 </html>
