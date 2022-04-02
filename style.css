@@ -210,7 +210,7 @@ header {
 .triangle {
   position: absolute;
   right: -29px;
-  bottom: -0.8px;
+  bottom: -0.4px;
   width: 0;
   height: 0;
   border-top: 29.5px solid #ffee22;
