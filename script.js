@@ -41,5 +41,13 @@ const message = document.querySelector('.clipboard-message');
 });
 
 // DARK MODE
-const isLight = window.matchMedia('(prefers-color-scheme:light)').matches;
-document.getElementById('dark-css').disabled = isLight;
+const setTheme = () => {
+  const isLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  document.getElementById('dark-css').disabled = isLight;
+};
+
+setTheme();
+
+window
+  .matchMedia('(prefers-color-scheme: light)')
+  .addEventListener('change', setTheme);
