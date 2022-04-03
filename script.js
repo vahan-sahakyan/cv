@@ -39,3 +39,7 @@ const message = document.querySelector('.clipboard-message');
     }, 1600);
   });
 });
+
+// DARK MODE
+const isLight = window.matchMedia('(prefers-color-scheme:light)').matches;
+document.getElementById('dark-css').disabled = isLight;

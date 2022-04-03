@@ -1,0 +1,65 @@
+* {
+  color: #ddd;
+}
+html {
+  background-color: #222;
+  background-image: radial-gradient(#333 10%, transparent 11%),
+    radial-gradient(#333 10%, transparent 11%);
+}
+
+.a4 {
+  background: #333;
+  box-shadow: 20px 13px 30px #0002;
+}
+.a4 .content-wrapper .content {
+  border-left: 2px solid #777;
+}
+
+.gh-svg,
+.ln-svg {
+  opacity: 1;
+  filter: brightness(200%);
+}
+.gh-svg:hover {
+  filter: invert(13%) sepia(0%) saturate(468%) hue-rotate(173deg)
+    brightness(250%) contrast(91%);
+}
+.ln-svg:hover {
+  filter: invert(29%) sepia(74%) saturate(1221%) hue-rotate(194deg)
+    brightness(67%) contrast(88%);
+}
+.glass {
+  background-color: #ccc1;
+  box-shadow: 15px 15px 40px #0003;
+}
+.clipboard-message {
+  color: #999;
+}
+
+.sticker {
+  background-color: #ffee22dd;
+}
+.phone,
+.email {
+  color: #222;
+}
+
+.avatar {
+  box-shadow: 10px 5px 14px #0004;
+}
+
+.profession {
+  color: #000;
+  background-color: #ffee22;
+}
+
+.triangle {
+  border-top: 29.5px solid #ffee22;
+}
+p {
+  color: #bbb;
+}
+
+li {
+  color: #bbb;
+}
