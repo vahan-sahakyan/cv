@@ -48,6 +48,8 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  align-items: center;
+  height: 100vh;
 }
 .left {
   display: block;
@@ -60,9 +62,9 @@ html {
 .a4 {
   z-index: 100;
   background: #f7f7f7;
-  margin: 200px 0;
-  /* height: 1000px;
-  width: 800px; */
+  margin: 9em 3em 18em 0em;
+  /*  */
+  /*  */
   height: 63rem; /* a4 ratio 1.4 */
   width: 45rem;
 
@@ -187,6 +189,7 @@ header {
 }
 .avatar {
   margin-right: 1rem;
+  margin-bottom: 0rem;
   z-index: 200;
   border-radius: 50%;
   height: 140px;
@@ -218,26 +221,42 @@ header {
 }
 .profession {
   font-family: 'ProductSans';
-  /* margin: 0; */
+  height: 30px;
   margin-bottom: 0;
-  margin-left: 20px;
-  padding: 3px 20px;
+  margin-left: -18px;
+  padding: 0 40px 0 42px;
   font-size: 1.2rem;
   color: #222;
   background-color: #ffee22;
+  line-height: 1.5em;
+}
+
+.profession:before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 8px;
+  height: 0;
+  border-top: 30px solid #ffee22;
+  border-right: 1.6em solid transparent;
+}
+.profession:aft {
+  z-index: -2;
+
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 170%;
+  height: 30px;
+  background-color: #0001;
 }
 .title {
   position: relative;
 }
-.triangle {
-  position: absolute;
-  right: -29px;
-  bottom: -0.4px;
-  width: 0;
-  height: 0;
-  border-top: 29.5px solid #ffee22;
-  border-right: 29.5px solid transparent;
-}
+
 p {
   color: #777;
   font-size: 0.9rem;
@@ -277,13 +296,13 @@ li {
   padding-left: 6px;
 }
 
-.footer {
-  height: 200px;
-  margin-top: 300px;
+footer {
+  height: 0px;
 }
 
 .a4 .wrapper {
   padding: 60px 50px;
+  overflow: hidden;
 }
 
 .a4 header {
