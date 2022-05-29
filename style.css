@@ -32,8 +32,7 @@ html {
 
   background-color: #bde;
   background-color: #2f2f2f33;
-  background-image: radial-gradient(#bbb 10%, transparent 11%),
-    radial-gradient(#bbb 10%, transparent 11%);
+  background-image: radial-gradient(#bbb 10%, transparent 11%), radial-gradient(#bbb 10%, transparent 11%);
   background-size: 10px 10px;
   background-position: 0 0, 5px 5px;
   background-repeat: repeat;
@@ -73,21 +72,17 @@ html {
   position: relative;
 }
 
-.gh-svg,
-.ln-svg {
-  opacity: 0.7;
-}
-.gh-svg:hover {
-  cursor: default;
-  opacity: 1;
-  filter: invert(13%) sepia(20%) saturate(468%) hue-rotate(173deg)
-    brightness(54%) contrast(91%);
+.ln-svg,
+.gh-svg {
+  fill: #777;
 }
 .ln-svg:hover {
   cursor: default;
-  opacity: 1;
-  filter: invert(29%) sepia(74%) saturate(1221%) hue-rotate(194deg)
-    brightness(67%) contrast(88%);
+  fill: #0b65c2;
+}
+.gh-svg:hover {
+  cursor: default;
+  fill: #2e3741;
 }
 .glass {
   display: flex;
@@ -108,7 +103,7 @@ html {
   /* border-radius: 10% / 1.5%; */
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: 15px 15px 40px #0003;
+  box-shadow: 10px 10px 25px #0002;
 }
 .clipboard-message {
   font-family: 'ProductSans Bold';
