@@ -323,9 +323,16 @@ h4 {
   align-items: center;
   justify-content: start;
   gap: 2em;
+  opacity: 0.7;
 }
 .job-info > * {
   margin: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
 }
 
 .experience-name {

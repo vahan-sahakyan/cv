@@ -16,6 +16,10 @@ html {
   border-left: 2px solid #777;
 }
 
+hr {
+  background-color: #777;
+}
+
 .experience-name {
   color: var(--primary-color);
   opacity: 0.8;
