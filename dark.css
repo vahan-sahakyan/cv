@@ -3,34 +3,34 @@
 }
 html {
   background-color: #222;
-  background-image: radial-gradient(#333 10%, transparent 11%),
-    radial-gradient(#333 10%, transparent 11%);
+  background-image: radial-gradient(#333 10%, transparent 11%), radial-gradient(#333 10%, transparent 11%);
+  /* background-image: none; */
 }
 
 .a4 {
   background: #333;
-  box-shadow: 20px 13px 30px #0002;
+  /* box-shadow: 20px 13px 30px #0002; */
+  box-shadow: none;
 }
 .a4 .content-wrapper .content {
   border-left: 2px solid #777;
 }
 
-.gh-svg,
-.ln-svg {
-  opacity: 1;
-  filter: brightness(200%);
-}
-.gh-svg:hover {
-  filter: invert(13%) sepia(0%) saturate(468%) hue-rotate(173deg)
-    brightness(250%) contrast(91%);
+.ln-svg,
+.gh-svg {
+  fill: #656565;
 }
 .ln-svg:hover {
-  filter: invert(29%) sepia(74%) saturate(1221%) hue-rotate(194deg)
-    brightness(67%) contrast(88%);
+  fill: #0b65c2;
+}
+.gh-svg:hover {
+  fill: #bbc4d0;
 }
 .glass {
-  background-color: #ccc1;
+  background-color: #8881;
+  /* backdrop-filter: blur(20px); */
   box-shadow: 15px 15px 40px #0003;
+  box-shadow: none;
 }
 .clipboard-message {
   color: #999;
@@ -45,7 +45,8 @@ html {
 }
 
 .avatar {
-  box-shadow: 10px 5px 14px #0004;
+  /* box-shadow: 10px 5px 14px #0004; */
+  box-shadow: 5px 5px 10px #0002;
 }
 
 .profession {
@@ -59,4 +60,7 @@ p {
 
 li {
   color: #bbb;
+}
+a {
+  color: #333;
 }
