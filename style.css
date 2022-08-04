@@ -10,7 +10,7 @@
 * {
   padding: 0;
   margin: 0;
-  color: #444;
+  color: #333;
   /* border: 1px solid orangered; */
   font-family: 'Raleway', sans-serif;
   font-family: 'ProductSans';
@@ -52,11 +52,11 @@ html {
 }
 .left {
   display: block;
-  min-width: 25vw;
+  min-width: 20vw;
 }
 .right {
   display: block;
-  min-width: 10vw;
+  /* min-width: 10vw; */
 }
 .a4 {
   z-index: 100;
@@ -75,13 +75,12 @@ html {
 .ln-svg,
 .gh-svg {
   fill: #777;
+  cursor: pointer;
 }
 .ln-svg:hover {
-  cursor: default;
   fill: #0b65c2;
 }
 .gh-svg:hover {
-  cursor: default;
   fill: #2e3741;
 }
 .glass {
@@ -149,12 +148,15 @@ html {
   align-items: flex-start;
   justify-content: center;
 }
-a {
-  cursor: default;
+li a {
+  background-color: #ffee22;
+  padding: 0 0.5em;
+  text-decoration: none;
+  cursor: pointer;
 }
 .phone,
 .email {
-  cursor: default;
+  cursor: pointer;
   color: #222;
   font-family: 'ProductSans Bold';
   font-size: 1.2rem;
@@ -196,8 +198,9 @@ header {
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 10px 5px 14px #0004;
 
-  background-image: url('./img/8BE0C012-6F14-4AA2-9A56-33C0B809DAE0_1_201_a.jpeg');
-  background-repeat: no-repeat;
+  /* background-image: url('./img/avatarShot2.png'); */
+  background: url('./img/avatarShot2.png');
+  /* background-repeat: no-repeat; */
   background-size: 103%;
 }
 
@@ -255,11 +258,6 @@ header {
   position: relative;
 }
 
-p {
-  color: #777;
-  font-size: 0.9rem;
-}
-
 h1,
 h2,
 h3,
@@ -285,14 +283,30 @@ h4 {
 }
 
 ul {
-  padding-left: 14px;
+  padding-left: 1em;
   margin-bottom: 40px;
 }
+p {
+  color: #777;
+  color: #444;
+  font-size: 0.9rem;
+}
+
 li {
   color: #777;
+  color: #444;
 
   font-size: 0.9rem;
   padding-left: 6px;
+}
+
+.project-cta {
+  display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  margin-top: 0.3em;
+  margin-left: -1.5em;
 }
 
 footer {
