@@ -7,10 +7,15 @@
   src: url(./fonts/Product-Sans/ProductSans-Bold.ttf);
 }
 
+:root {
+  --primary-color: #61dbfb;
+  --primary-color: #ffee22;
+}
+
 * {
   padding: 0;
   margin: 0;
-  color: #333;
+  color: #111;
   /* border: 1px solid orangered; */
   font-family: 'Raleway', sans-serif;
   font-family: 'ProductSans';
@@ -135,7 +140,7 @@ html {
   background-color: #46d7d288;
   background-color: #ea4335ee;
   background-color: #ffff77aa;
-  background-color: #ffee22dd;
+  background-color: var(--primary-color);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   box-shadow: 10px 5px 7px #0001;
@@ -148,12 +153,25 @@ html {
   align-items: flex-start;
   justify-content: center;
 }
-li a {
-  background-color: #ffee22;
-  padding: 0 0.5em;
+li a:hover,
+li a:focus {
+  outline: none;
+  /* border-bottom: 1px solid #888; */
+  box-shadow: 0px 2px 1px #0003;
+  transform: translateY(-2px);
+}
+li a,
+li a:active {
+  box-shadow: none;
+  transform: unset;
+  transition: 70ms;
+  border-bottom: 1px solid #0000;
+  background-color: var(--primary-color);
+  padding: 0 1.6rem;
   text-decoration: none;
   cursor: pointer;
 }
+
 .phone,
 .email {
   cursor: pointer;
@@ -228,7 +246,7 @@ header {
   padding: 0 40px 0 42px;
   font-size: 1.2rem;
   color: #222;
-  background-color: #ffee22;
+  background-color: var(--primary-color);
   line-height: 1.5em;
 }
 
@@ -240,10 +258,10 @@ header {
   left: 99%;
   width: 8px;
   height: 0;
-  border-top: 30px solid #ffee22;
+  border-top: 30px solid var(--primary-color);
   border-right: 1.6em solid transparent;
 }
-.profession:aft {
+.OFF.profession:after {
   z-index: -2;
 
   content: '';
@@ -267,7 +285,8 @@ h4 {
 
 h2 {
   font-weight: 600;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 10px;
   letter-spacing: 0.3rem;
 }
 h3 {
@@ -281,10 +300,56 @@ h4 {
   font-weight: 600;
   margin-bottom: 5px;
 }
+.education h5 {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 3px solid #0003; */
+  z-index: 2 !important;
+}
+.education h5:after {
+  z-index: -1 !important;
+  content: '';
+  height: 6px;
+  width: 115%;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  position: absolute;
+  bottom: 1px;
+  left: -6px;
+}
+
+.job-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2em;
+}
+.job-info > * {
+  margin: 0;
+}
+
+.experience-name {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 3px solid #0003; */
+  z-index: 2 !important;
+}
+.experience-name:after {
+  z-index: -1 !important;
+  content: '';
+  height: 8px;
+  width: 115%;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  position: absolute;
+  bottom: 1px;
+  left: -6px;
+}
 
 ul {
   padding-left: 1em;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  margin-bottom: 20px;
 }
 p {
   color: #777;
@@ -298,6 +363,13 @@ li {
 
   font-size: 0.9rem;
   padding-left: 6px;
+}
+.experience li {
+  list-style: '>>';
+}
+li strong {
+  font-family: 'ProductSans Bold';
+  color: #444;
 }
 
 .project-cta {

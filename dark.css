@@ -1,14 +1,14 @@
 * {
-  color: #ddd;
+  color: #eee;
 }
 html {
-  background-color: #222;
+  background-color: #202124;
   background-image: radial-gradient(#333 10%, transparent 11%), radial-gradient(#333 10%, transparent 11%);
   /* background-image: none; */
 }
 
 .a4 {
-  background: #333;
+  background: #303134;
   /* box-shadow: 20px 13px 30px #0002; */
   box-shadow: none;
 }
@@ -16,9 +16,23 @@ html {
   border-left: 2px solid #777;
 }
 
+.experience-name {
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.education h5 {
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+.experience-name:after,
+.education h5:after {
+  display: none;
+}
+
 .ln-svg,
 .gh-svg {
-  fill: #656565;
+  fill: #606164;
 }
 .ln-svg:hover {
   fill: #0b65c2;
@@ -37,7 +51,7 @@ html {
 }
 
 .sticker {
-  background-color: #ffee22dd;
+  background-color: var(--primary-color);
 }
 .phone,
 .email {
@@ -51,7 +65,7 @@ html {
 
 .profession {
   color: #000;
-  background-color: #ffee22;
+  background-color: var(--primary-color);
 }
 
 p {
@@ -60,6 +74,10 @@ p {
 
 li {
   color: #bbb;
+}
+li strong {
+  font-family: 'ProductSans Bold';
+  color: #ddd;
 }
 a {
   color: #333;
