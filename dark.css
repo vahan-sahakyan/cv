@@ -86,3 +86,28 @@ li strong {
 a {
   color: #333;
 }
+
+#download svg {
+  width: 2em;
+  stroke: #eee;
+}
+#download span {
+  color: #eee;
+}
+#download:hover svg {
+  stroke: var(--primary-color);
+}
+#download:hover span {
+  /* color: var(--primary-color); */
+}
+
+#download:hover svg,
+#download:hover span {
+  filter: brightness(200%);
+}
+
+#download {
+  background-color: #444b;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

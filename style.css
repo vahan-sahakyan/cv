@@ -57,16 +57,17 @@ html {
 }
 .left {
   display: block;
-  min-width: 20vw;
+  min-width: 12vw;
 }
 .right {
   display: block;
   /* min-width: 10vw; */
 }
+
 .a4 {
   z-index: 100;
   background: #f7f7f7;
-  margin: 9em 3em 18em 0em;
+  margin: 9em 0em 18em 0em;
   /*  */
   /*  */
   height: 63rem; /* a4 ratio 1.4 */
@@ -442,4 +443,42 @@ footer {
 }
 .skills h3 {
   margin-bottom: 1.2rem;
+}
+
+#download svg {
+  width: 2em;
+  stroke: #666;
+}
+#download span {
+  color: #666;
+}
+#download:hover svg,
+#download:hover span {
+  filter: brightness(50%);
+}
+
+#download {
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  width: 11.5em;
+
+  background-color: #fffa;
+  /* border-radius: 10% / 1.5%; */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 10px 10px 25px #0002;
+
+  border-radius: 10000px;
+
+  text-decoration: none;
+  position: fixed;
+  padding: 0.5em 1.5em;
+  left: 50%;
+  top: 3em;
+  transform: translate(-50%);
+}
+#download:active {
+  opacity: 0.7;
 }
