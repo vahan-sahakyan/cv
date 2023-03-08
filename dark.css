@@ -1,3 +1,7 @@
+:root {
+  --primary-color: rgb(111, 156, 208);
+}
+
 * {
   color: #eee;
 }
@@ -83,8 +87,9 @@ li strong {
   font-family: 'ProductSans Bold';
   color: #ddd;
 }
-a {
-  color: #333;
+a,
+a * {
+  color: #333 !important;
 }
 
 #download svg {
@@ -92,7 +97,7 @@ a {
   stroke: #eee;
 }
 #download span {
-  color: #eee;
+  color: #eee !important;
 }
 #download:hover svg {
   stroke: var(--primary-color);
