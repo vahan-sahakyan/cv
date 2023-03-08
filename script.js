@@ -9,8 +9,8 @@ const copyToClipboard = element => {
   window.getSelection().removeAllRanges(); // to deselect
 };
 const links = {
-  '.ln-svg': 'https://github.com/vahan-sahakyan',
-  '.gh-svg': 'https://www.linkedin.com/in/vahan-sahakyan/',
+  '.gh-svg': 'https://github.com/vahan-sahakyan',
+  '.ln-svg': 'https://www.linkedin.com/in/vahan-sahakyan/',
 };
 Object.entries(links).forEach(([element, url]) => {
   document.querySelector(element).addEventListener('click', e => {
