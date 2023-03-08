@@ -8,13 +8,13 @@ const copyToClipboard = element => {
   document.execCommand('copy');
   window.getSelection().removeAllRanges(); // to deselect
 };
-const links = {
+const LINKS = {
   '.gh-svg': 'https://github.com/vahan-sahakyan',
   '.ln-svg': 'https://www.linkedin.com/in/vahan-sahakyan/',
 };
-Object.entries(links).forEach(([element, url]) => {
-  document.querySelector(element).addEventListener('click', e => {
-    e.preventDefault();
+Object.entries(LINKS).forEach(([element, url]) => {
+  document.querySelector(element).addEventListener('click', event => {
+    event.preventDefault();
     window.open(url);
   });
 });
