@@ -134,7 +134,7 @@ html {
   /* top: 70px; */
   bottom: -45px;
   left: -50px;
-  border: 1px solid #bbb;
+  border: 1px solid #0006;
   border-radius: 4px;
   background-color: var(--primary-color);
   backdrop-filter: blur(3px);
