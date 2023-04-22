@@ -31,6 +31,7 @@ const message = document.querySelector('.clipboard-message');
   });
 });
 
+///////////////////////
 // DARK MODE
 const setTheme = () => {
   const isLight = window.matchMedia('(prefers-color-scheme: light)').matches;
@@ -44,3 +45,19 @@ window
   .addEventListener('change', setTheme);
 
 ///////////////////////
+// PDF MODE
+
+let pdfMode = false;
+function togglePdfMode() {
+  document.getElementById('pdf-mode-css').disabled = pdfMode;
+  pdfMode = !pdfMode;
+}
+let degree = 0;
+function rotate(times = 1) {
+  document.querySelector('.a4').style.transform = `rotate(${(degree +=
+    90 * times)}deg)`;
+}
+///////////////////////
+
+// togglePdfMode();
+// rotate(3);
