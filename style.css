@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'ProductSans';
-  src: url(./fonts/Product-Sans/ProductSans-Light.ttf);
-}
-@font-face {
-  font-family: 'ProductSans Bold';
-  src: url(./fonts/Product-Sans/ProductSans-Bold.ttf);
-}
-
 :root {
   --primary-color: #d4ddef;
   --primary-color: #b9dcff;
@@ -17,8 +8,8 @@
   margin: 0;
   color: #111;
   /* border: 1px solid orangered; */
-  font-family: 'Raleway', sans-serif;
-  font-family: 'ProductSans';
+
+  font-family: 'Helvetica Neue', sans-serif;
 }
 html {
   background-color: #e6e7e9;
@@ -58,7 +49,7 @@ html {
 }
 .left {
   display: block;
-  min-width: 12vw;
+  min-width: 6vw;
 }
 .right {
   display: block;
@@ -70,9 +61,8 @@ html {
   background: #f7f7f7;
   margin: 9em 0em 18em 0em;
   /*  */
-  /*  */
-  height: 63rem; /* a4 ratio 1.4 */
-  width: 45rem;
+  width: 56.5rem;
+  aspect-ratio: 1 / 1.4;
 
   box-shadow: 20px 13px 30px #0002;
 
@@ -96,12 +86,12 @@ html {
   align-items: center;
   justify-content: flex-end;
   gap: 2rem;
-  padding: 11rem 0;
+  padding: 14rem 0;
   box-sizing: border-box;
   /* ///// */
   z-index: 200;
   position: absolute;
-  height: 63rem;
+  height: 81rem;
   width: 7rem;
   left: -80px;
   top: 5rem;
@@ -111,7 +101,8 @@ html {
   box-shadow: 10px 10px 25px #0002;
 }
 .clipboard-message {
-  font-family: 'ProductSans Bold';
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
   position: absolute;
   bottom: -75px;
   left: 60px;
@@ -176,7 +167,9 @@ li a:active {
 .email {
   cursor: pointer;
   color: #222;
-  font-family: 'ProductSans Bold';
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
   font-size: 1.2rem;
   flex: 1;
   opacity: 0.8;
@@ -225,35 +218,41 @@ header {
 
 .full-name {
   font-family: 'Rubik', Sans-Serif;
-  font-family: 'ProductSans Bold';
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 
   margin-left: 20px;
-  margin-bottom: 4px;
-  font-weight: 100;
+  margin-bottom: 14px;
+  font-weight: 300;
   font-size: 2.8rem;
   line-height: 1em;
 }
 .full-name span {
+  font-weight: 300;
   font-family: 'Rubik', Sans-Serif;
-  font-family: 'ProductSans';
+
+  font-family: 'Helvetica Neue', sans-serif;
 
   padding: 0px;
 }
 .profession {
-  font-family: 'ProductSans';
+  font-family: 'Helvetica Neue', sans-serif;
   height: 30px;
   margin-bottom: 0;
-  margin-left: -18px;
-  padding: 0 40px 0 42px;
+  margin-left: 18px;
+  padding: 0 20px;
+  width: fit-content;
   font-size: 1.2rem;
   color: #222;
   background-color: var(--primary-color);
+
   line-height: 1.5em;
 }
 
 .profession:before {
   z-index: 1;
-  content: '';
+  /* content: ''; */
   position: absolute;
   bottom: 0;
   left: 99%;
@@ -262,15 +261,15 @@ header {
   border-top: 30px solid var(--primary-color);
   border-right: 1.6em solid transparent;
 }
-.OFF.profession:after {
+.profession:after {
   z-index: -2;
 
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 100%;
-  width: 170%;
-  height: 30px;
+  bottom: 28px;
+  left: -1%;
+  width: 32rem;
+  height: 2px;
   background-color: #0001;
 }
 .title {
@@ -281,7 +280,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'ProductSans Bold';
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 
 h2 {
@@ -301,10 +301,15 @@ h4 {
   font-weight: 600;
   margin-bottom: 5px;
 }
+.education section {
+  margin-bottom: 1.5rem;
+}
+.education section div {
+  margin-bottom: 12px;
+}
 .education h5 {
   position: relative;
   display: inline-block;
-  /* border-bottom: 3px solid #0003; */
   z-index: 2 !important;
 }
 .education h5:after {
@@ -318,6 +323,13 @@ h4 {
   bottom: 1px;
   left: -6px;
 }
+strong {
+  opacity: 0.9;
+}
+h6 {
+  font-size: 12px;
+  opacity: 0.7;
+}
 
 .job-info {
   display: flex;
@@ -325,6 +337,7 @@ h4 {
   justify-content: start;
   gap: 2em;
   opacity: 0.7;
+  margin-bottom: 4px;
 }
 .job-info > * {
   margin: 0;
@@ -336,10 +349,11 @@ hr {
   background-color: #ddd;
 }
 
-.experience-name {
+h3.experience-name {
   position: relative;
   display: inline-block;
-  /* border-bottom: 3px solid #0003; */
+  margin-top: 0px;
+  margin-bottom: 2px;
   z-index: 2 !important;
 }
 .experience-name:after {
@@ -376,7 +390,8 @@ li {
   list-style: '>>';
 }
 li strong {
-  font-family: 'ProductSans Bold';
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
   color: #444;
 }
 
@@ -431,13 +446,13 @@ footer {
 }
 
 .a4 .content-wrapper aside {
-  padding: 0 20px;
-  flex: 4;
+  padding: 0 15px 0 20px;
+  flex: 3.9;
 }
 .a4 .content-wrapper .content {
   border-left: 2px solid #ddd;
   padding: 0 20px;
-  flex: 7;
+  flex: 7.5;
 }
 .a4 .content-wrapper aside ul {
   margin-bottom: 1.5em;

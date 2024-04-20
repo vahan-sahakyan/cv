@@ -19,8 +19,8 @@ for (const linkTupleItem of SOCIAL_LINKS) attachOnClickUrlOpener(linkTupleItem);
 let clipboardTimer;
 const msg = document.querySelector('.clipboard-message');
 ['.email', '.phone'].forEach(el => {
-  document.querySelector(el).addEventListener('click', () => {
-    navigator.clipboard.writeText(this.textContent);
+  document.querySelector(el).addEventListener('click', e => {
+    navigator.clipboard.writeText(e.target.innerText);
     msg.textContent = `${classToWord(el)} Copied Successfully`;
     msg.classList.remove('hidden');
     clearTimeout(clipboardTimer);
@@ -91,7 +91,7 @@ function classToWord(str) {
 /** Switch between display modes: [true: screenshot, false: normal] */
 const screenshotMode = (function () {
   let enabled = false;
-  return function screenshotMode(enable) {
+  return function (enable) {
     if ([undefined, null].includes(enable))
       return console.error(new UsageError(enable, 'boolean'));
     if (enable && !enabled) {
