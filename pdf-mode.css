@@ -5,7 +5,10 @@
   display: none !important;
 }
 #download {
-  display: none !important;
+  /* display: none !important; */
+}
+#download.pdf-mode-btn {
+  display: flex !important;
 }
 section.pdf-mode-contacts {
   display: flex;

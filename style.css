@@ -488,10 +488,6 @@ footer {
 #download span {
   color: #666;
 }
-#download:hover svg,
-#download:hover span {
-  filter: brightness(50%);
-}
 
 #download {
   z-index: 9999;
@@ -515,8 +511,30 @@ footer {
   top: 3em;
   transform: translate(-50%);
 }
-#download:active {
-  opacity: 0.7;
+
+.pdf-mode-btn:is(:hover, :focus) {
+  color: unset !important;
+}
+.pdf-mode-btn {
+  white-space: nowrap;
+  width: 7.5rem !important;
+  justify-content: start !important;
+  user-select: none;
+  cursor: pointer;
+  top: unset !important;
+  left: unset !important;
+  right: 2rem !important;
+  bottom: 2rem !important;
+  transform: unset !important ;
+  box-shadow: none !important;
+}
+.pdf-mode-btn div {
+  color: #757575 !important;
+  display: inline;
+  font-weight: bolder;
+}
+.text-primary div {
+  color: rgb(0, 143, 232) !important;
 }
 
 section.pdf-mode-contacts {

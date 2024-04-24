@@ -36,12 +36,13 @@ onThemeChange(updateTheme);
 ///////////////////////
 // PDF MODE
 
+const pdfModeBtn = document.querySelector('.pdf-mode-btn');
+let isPdfMode = false;
 const togglePdfMode = (function () {
-  let pdfMode = false;
   return function (enable = undefined) {
     document.getElementById('pdf-mode-css').disabled =
-      enable !== undefined ? !enable : pdfMode;
-    pdfMode = enable ?? !pdfMode;
+      enable !== undefined ? !enable : isPdfMode;
+    isPdfMode = enable ?? !isPdfMode;
   };
 })();
 
@@ -52,6 +53,12 @@ const rotate = (function () {
       90 * times)}deg)`;
   };
 })();
+
+pdfModeBtn.addEventListener('click', () => {
+  togglePdfMode();
+  pdfModeBtn.classList.toggle('text-primary', isPdfMode);
+  pdfModeBtn.querySelector('figure div').textContent = isPdfMode ? 'ON' : 'OFF';
+});
 
 ///////////////////////
 // HELPERS

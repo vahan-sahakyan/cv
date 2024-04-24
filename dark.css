@@ -120,3 +120,13 @@ a * {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+
+.pdf-mode-btn figure {
+  color: #d4d4d4 !important;
+}
+.pdf-mode-btn div {
+  color: #a8a8a8 !important;
+}
+.text-primary div {
+  color: rgb(102 196 255) !important;
+}
