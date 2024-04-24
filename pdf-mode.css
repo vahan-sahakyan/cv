@@ -9,8 +9,14 @@
 }
 section.pdf-mode-contacts {
   display: flex;
-  margin: -2.3rem 0 1.5rem 1.5rem;
+  margin: -3rem 0 1.5rem 1.5rem;
   flex-direction: column;
+  gap: 4px;
+}
+section.pdf-mode-contacts div.pdf-mode-contacts__row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
 div.wrapper {
   padding-top: 3.3rem !important;
