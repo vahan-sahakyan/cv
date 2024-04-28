@@ -540,3 +540,6 @@ footer {
 section.pdf-mode-contacts {
   display: none;
 }
+.cursor-pointer {
+  cursor: pointer;
+}

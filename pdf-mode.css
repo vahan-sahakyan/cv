@@ -15,6 +15,7 @@ section.pdf-mode-contacts {
   margin: -3rem 0 1.5rem 1.5rem;
   flex-direction: column;
   gap: 4px;
+  width: fit-content;
 }
 section.pdf-mode-contacts div.pdf-mode-contacts__row {
   display: flex;
