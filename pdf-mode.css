@@ -1,3 +1,7 @@
+:root {
+  --gutter: 0.3rem;
+}
+
 .glass {
   display: none !important;
 }
@@ -11,16 +15,18 @@
   display: flex !important;
 }
 section.pdf-mode-contacts {
+  color: var(--text-color);
+  font-size: 11px;
   display: flex;
-  margin: -3rem 0 1.5rem 1.5rem;
-  flex-direction: column;
-  gap: 4px;
+  margin: -2.5rem 0 1.5rem 20px;
+  flex-direction: row;
+  gap: var(--gutter);
   width: fit-content;
 }
 section.pdf-mode-contacts div.pdf-mode-contacts__row {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: var(--gutter);
 }
 div.wrapper {
   padding-top: 3.3rem !important;
