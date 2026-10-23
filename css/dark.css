@@ -42,11 +42,6 @@ li {
 li strong {
   color: #ddd;
 }
-a,
-a * {
-  color: #333 !important;
-}
-
 #download svg {
   width: 2em;
   stroke: #eee;
@@ -76,7 +71,4 @@ a * {
 }
 .text-primary div {
   color: rgb(102 196 255) !important;
-}
-section.pdf-mode-contacts a {
-  color: #eee !important;
 }
