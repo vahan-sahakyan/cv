@@ -28,9 +28,6 @@ section.pdf-mode-contacts div.pdf-mode-contacts__row {
   align-items: center;
   gap: var(--gutter);
 }
-div.wrapper {
-  padding-top: 3.3rem !important;
-}
 .project-cta {
   display: none !important;
 }

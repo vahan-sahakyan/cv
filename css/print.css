@@ -1,0 +1,58 @@
+/* text-based A4 output for ats parsers, see build-pdf.sh */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+html {
+  background: none;
+}
+
+#download,
+.glass,
+.left,
+.right {
+  display: none !important;
+}
+
+.cover,
+.a4-grid {
+  display: block;
+  height: auto;
+}
+
+/* the page is laid out at 56.5rem (904px), scale it down to 210mm */
+.a4 {
+  zoom: 0.878;
+  margin: 0;
+  box-shadow: none;
+  aspect-ratio: auto;
+  transform: none !important;
+}
+
+/* opacity and z-index layers are painted after normal flow, which breaks text order */
+* {
+  opacity: 1 !important;
+  position: static !important;
+  z-index: auto !important;
+  font-variant-ligatures: none;
+}
+
+/* no accent colors on paper */
+h1,
+h2 {
+  color: #111 !important;
+}
+
+.education .date {
+  color: #777;
+}
+
+.education .date {
+  float: none;
+  margin-left: 0.5em;
+}
+
+section.pdf-mode-contacts {
+  display: flex;
+}

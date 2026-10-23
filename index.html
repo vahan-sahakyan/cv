@@ -7,21 +7,12 @@
       name="viewport"
       content="width=device-width, initial-scale=0.5, maximum-scale=0.5"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link id="dark-css" rel="stylesheet" href="dark.css" />
-    <link id="pdf-mode-css" rel="stylesheet" href="pdf-mode.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400i|Rubik"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="./favicon_blue.png" />
-    <link rel="stylesheet" href="./icons/fa6_1_1/css/all.min.css" />
-    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link id="dark-css" rel="stylesheet" href="./css/dark.css" media="screen" />
+    <link id="pdf-mode-css" rel="stylesheet" href="./css/pdf-mode.css" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <script defer src="./js/script.js"></script>
     <title>Vahan Sahakyan | CV</title>
   </head>
   <body>
@@ -33,8 +24,8 @@
           <!-- The A4 CV Paper -->
           <a
             id="download"
-            href="./download/VAHAN_SAHAKYAN__SWE.pdf"
-            download="VAHAN_SAHAKYAN__SWE"
+            href="./download/VAHAN_SAHAKYAN__SR_SWE.pdf"
+            download="VAHAN_SAHAKYAN__SR_SWE"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +45,7 @@
 
           <div class="a4">
             <div class="glass">
-              <a href="">
+              <a href="https://linkedin.com/in/vahan-sahakyan" target="_blank">
                 <svg
                   class="ln-svg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +66,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="">
+              <a href="https://github.com/vahan-sahakyan" target="_blank">
                 <svg
                   class="gh-svg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -103,267 +94,257 @@
               <header>
                 <div class="title">
                   <h1 class="full-name">Vahan Sahakyan</h1>
+                  <p class="headline">Senior Backend Engineer</p>
                 </div>
               </header>
               <section class="pdf-mode-contacts">
+                <div class="pdf-mode-contacts__row">Yerevan, Armenia</div>
                 <div class="pdf-mode-contacts__row">
-                  <div>Yerevan, Armenia</div>
+                  |
+                  <a href="tel:+37495276827">+374 95 276827</a>
                 </div>
                 <div class="pdf-mode-contacts__row">
-                  •
-
-                  <div>374 (95) 276827</div>
+                  |
+                  <a href="mailto:vahan.codes@gmail.com">vahan.codes@gmail.com</a>
                 </div>
                 <div class="pdf-mode-contacts__row">
-                  •
-                  <div>vahan.codes@gmail.com</div>
+                  |
+                  <a href="https://t.me/vahan_sahakyan" target="_blank">t.me/vahan_sahakyan</a>
                 </div>
-                <div
-                  class="pdf-mode-contacts__row cursor-pointer"
-                  onclick="window.open('https://linkedin.com/in/vahan-sahakyan')"
-                >
-                  •
-                  <div>linkedin.com/in/vahan-sahakyan</div>
+                <div class="pdf-mode-contacts__row">
+                  |
+                  <a href="https://linkedin.com/in/vahan-sahakyan" target="_blank">linkedin.com/in/vahan-sahakyan</a>
+                </div>
+                <div class="pdf-mode-contacts__row">
+                  |
+                  <a href="https://github.com/vahan-sahakyan" target="_blank">github.com/vahan-sahakyan</a>
                 </div>
               </section>
-              <div class="content-wrapper">
-                <div class="content">
-                  <div class="experience">
-                    <!-- ABOUT START -->
-                    <p class="about">
-                      Adaptable Full Stack Software Engineer who has a technology-agnostic approach to problem-solving. I
-                      specialize in building scalable, maintainable solutions
-                      across the stack using modern web frameworks and backend
-                      technologies like Java, Golang, and TypeScript, complemented
-                      by practical experience deploying cloud-based systems on
-                      Google Cloud Platform (GCP). My work spans integrating
-                      platforms such as Zephr and Cordial, independently
-                      delivering impactful features like streamlining
-                      communication between local npm registries, and using Bash
-                      scripting, regular expressions, and Linux tools in
-                      day-to-day workflows. With a focus on optimizing both
-                      modern and legacy systems, I thrive in solving complex
-                      technical challenges and delivering solutions that drive
-                      meaningful results.
-                    </p>
-                    <br />
-                    <!-- ABOUT END -->
+              <div class="content">
+                <!-- SUMMARY START -->
+                <h2>SUMMARY</h2>
+                <p class="about">
+                  Senior Backend Engineer with nearly 5 years of experience
+                  designing distributed systems and event-driven services in Go
+                  (Golang), Java and TypeScript, using gRPC, Apache Kafka and
+                  Kubernetes on Google Cloud Platform (GCP), with working
+                  knowledge of Amazon Web Services (AWS). Architected the search,
+                  scraping and data pipeline backends of the Forbes Vetted
+                  platform.
+                </p>
+                <!-- SUMMARY END -->
 
-                    <!-- EXPERIENCE START -->
-                    <h2>CAREER EXPERIENCE</h2>
+                <!-- EXPERIENCE START -->
+                <div class="experience">
+                  <h2>EXPERIENCE</h2>
 
-                    <!-- 4 -->
-                    <h3 class="experience-name">Full Stack Software Engineer</h3>
-                    <div class="job-info">
-                      <h4>
-                        OPTIMUM PARTNERS
-                        <!-- · Contracting for Forbes -->
-                        <span>&nbsp; | &nbsp;</span>
-                        May 2024 - Present
-                      </h4>
-                    </div>
-                    <ul>
-                      <li>
-                        Contributed to the development and enhancement of
-                        Forbes.com, Bertie CMS, Vetted Team, and Platform Team,
-                        delivering impactful solutions while maintaining 100%
-                        code coverage and implementing new features.
-                      </li>
-                      <li>
-                        Reviewed technical tasks for interview candidates and
-                        shared best practices with junior developers, fostering
-                        team growth and ensuring quality standards.
-                      </li>
-                      <li>
-                        Organized and maintained project documentation using
-                        Loom recordings, Markdown files, and Slab tools to
-                        support seamless collaboration and knowledge sharing.
-                      </li>
-                    </ul>
+                  <!-- 5 -->
+                  <h3 class="experience-name">
+                    Optimum Partners (Client: Forbes) | Senior Backend Engineer
+                    <span class="job-meta">| Yerevan, Armenia | Jan 2025 - Present</span>
+                  </h3>
+                  <ul>
+                    <li>
+                      Architected distributed Go and TypeScript backends for the
+                      Vetted platform: search, cursor pagination, scraping, data
+                      pipelines.
+                    </li>
+                    <li>
+                      Implemented event-driven architecture and async processing
+                      across platform services, reducing coupling and operational
+                      overhead.
+                    </li>
+                    <li>
+                      Led backend delivery on Nexus initiatives, from product
+                      requirements to technical specifications, system design and
+                      phased rollouts.
+                    </li>
+                    <li>
+                      Managed Kubernetes deployments and GCP infrastructure,
+                      improving resource utilization, monitoring and log
+                      aggregation.
+                    </li>
+                    <li>
+                      Mentored peers through code and architecture reviews; as a
+                      TechX mentor (Jun - Aug 2025), conducted technical
+                      interviews and trained engineers in backend system design.
+                    </li>
+                  </ul>
 
-                    <!-- 3 -->
-                    <h3 class="experience-name">Full Stack Software Engineer</h3>
-                    <div class="job-info">
-                      <h4>
-                        DATAFOUNDRY
-                        <!-- · Full-time -->
-                        <!-- <br /> -->
-                        <span>&nbsp; | &nbsp;</span>
+                  <!-- 4 -->
+                  <h3 class="experience-name">
+                    Optimum Partners (Client: Forbes) | Full Stack Software
+                    Engineer
+                    <span class="job-meta">| Yerevan, Armenia | May 2024 - Jan 2025</span>
+                  </h3>
+                  <ul>
+                    <li>
+                      Built backend services and integrations for Bertie CMS and
+                      Vetted in Go and TypeScript: search, content pipelines, data
+                      processing.
+                    </li>
+                    <li>
+                      Integrated the Zephr and Cordial platforms and delivered a
+                      feature streamlining communication between local npm
+                      registries.
+                    </li>
+                    <li>
+                      Delivered features at 100% code coverage; documented work
+                      with Loom, Markdown and Slab.
+                    </li>
+                  </ul>
 
-                        <!-- · -->
-                        Sep 2023 - May 2024 · 9 mos
-                      </h4>
-                    </div>
-                    <ul>
-                      <li>
-                        Led large-scale refactoring across MicroServices,
-                        improving code structure and maintainability for
-                        projects like DF mSignal AI, DF Literature Monitor, and
-                        DF mSafety AI.
-                      </li>
-                      <li>
-                        Integrated static code quality tools, including Sonarqube, in
-                        legacy codebases and ensured a minimum of 70% unit test
-                        coverage while reducing code smells to meet SonarQube
-                        quality gates.
-                      </li>
-                      <li>
-                        Transformed static components into reusable,
-                        library-style modules, enhancing consistency and
-                        scalability across the entire ecosystem.
-                      </li>
-                    </ul>
+                  <!-- 3 -->
+                  <h3 class="experience-name">
+                    Datafoundry | Full Stack Software Engineer
+                    <span class="job-meta">| Yerevan, Armenia | Sep 2023 - May 2024</span>
+                  </h3>
+                  <ul>
+                    <li>
+                      Led large-scale refactoring of Go and Java microservices,
+                      establishing service boundaries and decoupling legacy
+                      components.
+                    </li>
+                    <li>
+                      Implemented SonarQube and linting across a polyglot
+                      codebase, reaching 70%+ unit test coverage and passing quality gates.
+                    </li>
+                    <li>
+                      Built reusable Go packages, TypeScript libraries and Angular
+                      components for DF mSignal AI, Literature Monitor and mSafety
+                      AI.
+                    </li>
+                  </ul>
 
-                    <!-- 2 -->
-                    <h3 class="experience-name">Software Engineer</h3>
-                    <div class="job-info">
-                      <h4>
-                        NWSLAB
-                        <!-- · Full-time -->
-                        <!-- <br /> -->
-                        <span>&nbsp; | &nbsp;</span>
+                  <!-- 2 -->
+                  <h3 class="experience-name">
+                    NWSLAB (Client: Warner Music Group) | Software Engineer
+                    <span class="job-meta">| Yerevan, Armenia | Oct 2022 - Sep 2023</span>
+                  </h3>
+                  <ul>
+                    <li>
+                      Built backend services and data pipelines in Go and Java for
+                      the ADA royalties and publishing system serving DSPs such as
+                      Spotify.
+                    </li>
+                    <li>
+                      Shaped system-level decisions for Go-based backend services
+                      in tech design reviews with the Solutions Architect.
+                    </li>
+                    <li>
+                      Established TypeScript patterns and type-safe API contracts
+                      for frontend-backend integration in a team distributed
+                      across 6 countries.
+                    </li>
+                  </ul>
 
-                        <!-- · -->
-                        Nov 2022 - Sep 2023 · 11 mos
-                      </h4>
-                    </div>
-                    <ul>
-                      <li>
-                        Collaborated in a cross-cultural team spanning Russia,
-                        Ukraine, Armenia, the US, Romania, and India to develop
-                        Carpathia UI for Warner Music Group’s ADA.
-                      </li>
-                      <li>
-                        Contributed to architectural decision-making during tech
-                        design discussions among peer backend engineers and the
-                        Solutions Architect, ensuring scalable solutions.
-                      </li>
-                      <li>
-                        Transformed Figma designs into high-quality,
-                        maintainable code and implemented generic TypeScript
-                        utility types tailored to the project’s specific needs
-                        while actively participating in peer code reviews under
-                        the guidance of the Tech Lead.
-                      </li>
-                    </ul>
-
-                    <!-- 1 -->
-                    <h3 class="experience-name">Software Engineer</h3>
-                    <div class="job-info">
-                      <h4>
-                        DATAFOUNDRY
-                        <!-- · Full-time -->
-                        <!-- <br /> -->
-                        <span>&nbsp; | &nbsp;</span>
-
-                        <!-- · -->
-                        Mar 2022 - Nov 2022 · 9 mos
-                      </h4>
-                    </div>
-                    <ul>
-                      <li>
-                        Initiated the development of a dashboard analytics app
-                        for DF mSignal AI, supporting 4 distinct user roles,
-                        while integrating and reusing components from the legacy
-                        version of the project.
-                      </li>
-                      <li>
-                        Enhanced performance by optimizing state management and
-                        refactoring the codebase using SOC (Separation of
-                        Concerns) and DRY (Don't Repeat Yourself) principles.
-                      </li>
-                      <li>
-                        Collaborated closely with backend engineers to design
-                        and implement technical solutions tailored to project
-                        requirements.
-                      </li>
-                    </ul>
-
-                    <!-- EXPERIENCE END -->
-
-                    <br />
-                  </div>
+                  <!-- 1 -->
+                  <h3 class="experience-name">
+                    Datafoundry | Software Engineer
+                    <span class="job-meta">| Yerevan, Armenia | Mar 2022 - Oct 2022</span>
+                  </h3>
+                  <ul>
+                    <li>
+                      Built a multi-tenant analytics dashboard with role-based
+                      access control (4 user roles) for DF mSignal AI on Go and
+                      Java backends.
+                    </li>
+                    <li>
+                      Optimized state management and refactored legacy codebases
+                      using SOC and DRY principles, improving frontend
+                      performance.
+                    </li>
+                  </ul>
                 </div>
-                <aside>
-                  <div class="skills">
-                    <h2>SKILLS</h2>
-                    <ul>
-                      <li>
-                        <strong>Backend Development:</strong> Java, Golang,
-                        Spring, Hibernate, JPA, RESTful APIs, Microservices
-                      </li>
-                      <li>
-                        <strong>Cloud Deployments:</strong> Google Cloud
-                        Platform (GCP), Kafka, Docker, Kubernetes, ArgoCD
-                      </li>
-                      <li>
-                        <strong>Linux Workflows & Scripting:</strong> Bash,
-                        Shell scripting, Regular Expressions, Unix tools
-                      </li>
-                      <li>
-                        <strong>Full-Stack Development:</strong> JavaScript,
-                        TypeScript, React, Redux, Angular, RxJS, Nx, Monorepo, Node.js, Prisma
-                      </li>
-                      <li>
-                        <strong>Database Management:</strong> MongoDB,
-                        PostgreSQL, RDBMS, Query Optimization
-                      </li>
-                      <li>
-                        <strong>Testing & Code Quality:</strong> Jest, ESLint,
-                        SonarQube, Code Climate, Unit & Integration Testing
-                      </li>
-                      <li>
-                        <strong>Code Optimization & Refactoring:</strong> Legacy
-                        code migration, SOC (Separation of Concerns), DRY
-                        principles
-                      </li>
-                      <li>
-                        <strong>Scalable System Architecture:</strong> API
-                        Design, Caching strategies, Fastly, Varnish, Distributed systems
-                      </li>
-                      <li>
-                        <strong>Dev Tools & Automation:</strong> Git, Makefiles, Webpack,
-                        NPM, Yarn, JFrog Artifactory
-                      </li>
-                      <li>
-                        <strong>Collaboration & Leadership:</strong> Code
-                        reviews, technical mentoring, and documentation
-                      </li>
-                    </ul>
-                  </div>
+                <!-- EXPERIENCE END -->
 
+                <!-- EDUCATION START -->
+                <div class="education">
                   <h2>EDUCATION</h2>
-                  <div class="education">
-                    <section>
-                      <h4>Mentorship · 1 year</h4>
-                      <div>
-                        <h5>BPC Armenia: Artak Yenokyan</h5>
-                        <h6>Sr. Engineering Manager at Siemens EDA</h6>
-                        <p>C++, Python, Linux, Bash</p>
-                        <h6>2018 - 2019</h6>
-                      </div>
-                    </section>
-                    <section>
-                      <h4>Completed Courses · 5+</h4>
-                      <div>
-                        <h5>UDEMY: Jonas Schmedtmann</h5>
-                        <p>- The Complete JS Course</p>
-                        <p>- Node/Express Bootcamp</p>
-                        <h6>2021 - 2022</h6>
-                      </div>
-                      <div>
-                        <h5>ZTM: Andrei Neagoie</h5>
-                        <p>- React/Redux Course</p>
-                        <h6>2021 - 2022</h6>
-                      </div>
-                      <div>
-                        <h5>John Purcell: Derby, UK</h5>
-                        <p>- Java Core 11 Course</p>
-                        <h6>2022 - 2023</h6>
-                      </div>
-                    </section>
-                  </div>
-                </aside>
+                  <ul>
+                    <li>
+                      <strong>Bachelor of Performing Arts (BPA)</strong> -
+                      Yerevan Komitas State Conservatory
+                      <span class="date">2021</span>
+                    </li>
+                    <li>
+                      <strong>Bachelor of Commerce (BCom), Tourism and
+                        Hospitality Management</strong>
+                      - Yerevan State College of Humanities
+                      <span class="date">2014</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- EDUCATION END -->
+
+                <!-- SKILLS START -->
+                <div class="skills">
+                  <h2>SKILLS</h2>
+                  <ul>
+                    <li>
+                      <strong>Programming Languages:</strong> Go (Golang), Java,
+                      TypeScript, JavaScript, Python, SQL, Bash
+                    </li>
+                    <li>
+                      <strong>Frameworks:</strong> gRPC, Protocol Buffers, Gin,
+                      Chi, Spring, Hibernate, JPA, Node.js, Express, FastAPI,
+                      React, Redux, Angular, RxJS
+                    </li>
+                    <li>
+                      <strong>Architecture:</strong> Distributed Systems,
+                      Microservices, Event-Driven Architecture, RESTful APIs, GraphQL, Saga Pattern, Circuit Breaker
+                    </li>
+                    <li>
+                      <strong>Cloud Platforms:</strong> Google Cloud Platform
+                      (GCP), Amazon Web Services (AWS), Pub/Sub
+                    </li>
+                    <li>
+                      <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB,
+                      Redis, Neo4j (Cypher), Firestore, SQLite
+                    </li>
+                    <li>
+                      <strong>DevOps:</strong> Docker, Kubernetes (K8s), Argo CD,
+                      Argo Workflows, CI/CD, Fastly, Varnish
+                    </li>
+                    <li>
+                      <strong>Tools:</strong> Apache Kafka, WebSockets, Git, Linux,
+                      Jest, SonarQube, Nx, JFrog Artifactory
+                    </li>
+                  </ul>
+                </div>
+                <!-- SKILLS END -->
+
+                <!-- CERTIFICATIONS START -->
+                <div class="certifications">
+                  <h2>CERTIFICATIONS & COURSES</h2>
+                  <ul>
+                    <li>
+                      Neo4j Certified Professional (NCP) | MongoDB: Indexing
+                      Design Fundamentals | Claude with Google Cloud's Vertex AI
+                    </li>
+                    <li>
+                      Certified Kubernetes Administrator (CKA) with Practice Tests
+                      - KodeKloud course, Udemy
+                    </li>
+                    <li>
+                      C++ Programming mentorship - Believer Programmers' Club of
+                      Armenia, mentor Artak Yenokyan (Siemens EDA), 2018 - 2019
+                    </li>
+                  </ul>
+                </div>
+                <!-- CERTIFICATIONS END -->
+
+                <!-- LANGUAGES START -->
+                <div class="languages">
+                  <h2>LANGUAGES</h2>
+                  <ul>
+                    <li>
+                      English (Full Professional) | Russian (Full Professional) |
+                      Armenian (Native) | Japanese (Elementary)
+                    </li>
+                  </ul>
+                </div>
+                <!-- LANGUAGES END -->
               </div>
             </div>
           </div>
