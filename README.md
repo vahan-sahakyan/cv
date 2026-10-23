@@ -4,7 +4,7 @@ to Launch [Click Here](https://vahan-sahakyan.github.io/cv/)
 
 ## Build PDF
 
-`./scripts/build-pdf.sh` renders `index.html` via headless Chrome into a text-based A4 `download/VAHAN_SAHAKYAN__SR_SWE.pdf`. Set `CHROME` to override the browser path.
+`./scripts/build-pdf.sh` renders `index.html` via headless Chrome into a text-based A4 `download/VAHAN_SAHAKYAN_SR_SWE.pdf`. Set `CHROME` to override the browser path.
 
 ## Layout
 

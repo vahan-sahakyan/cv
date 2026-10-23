@@ -24,8 +24,8 @@
           <!-- The A4 CV Paper -->
           <a
             id="download"
-            href="./download/VAHAN_SAHAKYAN__SR_SWE.pdf"
-            download="VAHAN_SAHAKYAN__SR_SWE"
+            href="./download/VAHAN_SAHAKYAN_SR_SWE.pdf"
+            download="VAHAN_SAHAKYAN_SR_SWE"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -150,24 +150,16 @@
                       pipelines.
                     </li>
                     <li>
-                      Implemented event-driven architecture and async processing
-                      across platform services, reducing coupling and operational
-                      overhead.
+                      Implemented event-driven architecture with Kafka-compatible brokers and async processing, reducing service coupling.
                     </li>
                     <li>
-                      Led backend delivery on Nexus initiatives, from product
-                      requirements to technical specifications, system design and
-                      phased rollouts.
+                      Designed production MongoDB and Redis schemas, caching strategy, and scaling and consistency patterns.
                     </li>
                     <li>
-                      Managed Kubernetes deployments and GCP infrastructure,
-                      improving resource utilization, monitoring and log
-                      aggregation.
+                      Managed multi-tenant Kubernetes on GCP (prod, staging, dev) with namespace isolation and GitOps via Argo CD and Argo Events.
                     </li>
                     <li>
-                      Mentored peers through code and architecture reviews; as a
-                      TechX mentor (Jun - Aug 2025), conducted technical
-                      interviews and trained engineers in backend system design.
+                      Led backend delivery on Nexus initiatives from requirements to phased rollouts; mentored peers and, as a TechX mentor (Jun - Aug 2025), interviewed and trained engineers.
                     </li>
                   </ul>
 
@@ -291,28 +283,50 @@
                       React, Redux, Angular, RxJS
                     </li>
                     <li>
-                      <strong>Architecture:</strong> Distributed Systems,
-                      Microservices, Event-Driven Architecture, RESTful APIs, GraphQL, Saga Pattern, Circuit Breaker
+                      <strong>Architecture:</strong> Distributed Systems, Microservices, Event-Driven Architecture, CQRS, Event Sourcing, RESTful APIs, GraphQL
                     </li>
                     <li>
                       <strong>Cloud Platforms:</strong> Google Cloud Platform
                       (GCP), Amazon Web Services (AWS), Pub/Sub
                     </li>
                     <li>
-                      <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB,
-                      Redis, Neo4j (Cypher), Firestore, SQLite
+                      <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis, ScyllaDB, ClickHouse, Memcached, Neo4j (Cypher), Firestore, SQLite
                     </li>
                     <li>
-                      <strong>DevOps:</strong> Docker, Kubernetes (K8s), Argo CD,
-                      Argo Workflows, CI/CD, Fastly, Varnish
+                      <strong>DevOps:</strong> Docker, Kubernetes (K8s), Helm, Argo CD, Argo Events, Argo Workflows, CI/CD, Fastly, Varnish
                     </li>
                     <li>
-                      <strong>Tools:</strong> Apache Kafka, WebSockets, Git, Linux,
-                      Jest, SonarQube, Nx, JFrog Artifactory
+                      <strong>Observability:</strong> Prometheus, Grafana, Jaeger, Loki, Distributed Tracing
+                    </li>
+                    <li>
+                      <strong>Tools:</strong> Apache Kafka, Redpanda, WebSockets, Git, Linux, Jest, SonarQube, Nx, JFrog Artifactory
                     </li>
                   </ul>
                 </div>
                 <!-- SKILLS END -->
+
+                <!-- PROJECTS START -->
+                <div class="projects">
+                  <h2>PROJECTS</h2>
+                  <h3 class="experience-name">
+                    Distributed Social Network (Go, gRPC, Redpanda)
+                    <span class="job-meta">| <a href="https://github.com/vahan-sahakyan/distributed-social-network" target="_blank">github.com/vahan-sahakyan/distributed-social-network</a></span>
+                  </h3>
+                  <ul>
+                    <li>
+                      Built 10 Go microservices communicating over gRPC, with
+                      Redpanda (Kafka-compatible) event streaming, CQRS and event
+                      sourcing.
+                    </li>
+                    <li>
+                      Implemented polyglot persistence (ScyllaDB, PostgreSQL,
+                      ClickHouse event store, Memcached) with full observability
+                      (Prometheus, Grafana, Jaeger, Loki) and Helm charts for
+                      Kubernetes.
+                    </li>
+                  </ul>
+                </div>
+                <!-- PROJECTS END -->
 
                 <!-- CERTIFICATIONS START -->
                 <div class="certifications">

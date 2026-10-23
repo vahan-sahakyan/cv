@@ -230,6 +230,11 @@ h6 {
   color: #777;
 }
 
+.job-meta a {
+  color: inherit;
+  text-decoration: none;
+}
+
 hr {
   border: none;
   height: 2px;
@@ -330,6 +335,7 @@ footer {
 .about,
 .skills,
 .experience,
+.projects,
 .certifications,
 .education {
   margin-bottom: 0.9rem;
