@@ -11,8 +11,8 @@ to Launch [Click Here](https://vahan-sahakyan.github.io/cv/)
 | Path | Contents |
 |---|---|
 | `index.html` | CV markup |
-| `css/` | `style.css` base, `dark.css` dark theme, `pdf-mode.css` paper view, `print.css` A4 print/PDF |
-| `js/script.js` | theme switch, console helpers |
-| `assets/` | fonts, favicon |
+| `css/` | `style.css` screen, `print.css` A4 print/PDF |
+| `js/script.js` | console helper: `actions.rotate()` |
+| `assets/` | Geist static weights (OFL), favicon (same as the site) |
 | `download/` | built PDF, linked from the page |
 | `scripts/build-pdf.sh` | PDF build |

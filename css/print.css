@@ -4,27 +4,25 @@
   margin: 0;
 }
 
-html {
+html,
+body {
   background: none;
 }
 
-#download,
-.glass,
-.left,
-.right {
+.bar {
   display: none !important;
 }
 
-.cover,
-.a4-grid {
-  display: block;
-  height: auto;
+.desk {
+  padding: 0;
 }
 
 /* the page is laid out at 56.5rem (904px), scale it down to 210mm */
 .a4 {
   zoom: 0.878;
+  width: 56.5rem;
   margin: 0;
+  border-radius: 0;
   box-shadow: none;
   aspect-ratio: auto;
   transform: none !important;
@@ -38,21 +36,26 @@ html {
   font-variant-ligatures: none;
 }
 
-/* no accent colors on paper */
-h1,
-h2 {
-  color: #111 !important;
+/* kerning and tracking split words into fragments in extracted text */
+* {
+  letter-spacing: 0 !important;
+  font-kerning: none !important;
 }
 
-.education .date {
-  color: #777;
+/* no accent colors or section numbers on paper; the two-tone title stays, a shade darker for print */
+.tag::before {
+  content: none;
+}
+.headline {
+  color: var(--muted);
+}
+h4.is-current::before {
+  border-color: var(--ink);
+  background: var(--ink);
 }
 
+/* floats paint out of order too */
 .education .date {
   float: none;
   margin-left: 0.5em;
-}
-
-section.pdf-mode-contacts {
-  display: flex;
 }

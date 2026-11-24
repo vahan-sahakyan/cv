@@ -2,384 +2,263 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=0.5, maximum-scale=0.5"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f0f0f" />
+    <link rel="preload" href="./assets/fonts/geist/Geist-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/geist/GeistMono-Medium.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="./css/style.css" />
-    <link id="dark-css" rel="stylesheet" href="./css/dark.css" media="screen" />
-    <link id="pdf-mode-css" rel="stylesheet" href="./css/pdf-mode.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
-    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <script defer src="./js/script.js"></script>
     <title>Vahan Sahakyan | CV</title>
+    <meta
+      name="description"
+      content="CV of Vahan Sahakyan, Senior Backend Engineer: distributed, event-driven systems in Go, Java and TypeScript on Kafka and Kubernetes."
+    />
+    <link rel="canonical" href="https://vahan-sahakyan.github.io/cv/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://vahan-sahakyan.github.io/cv/" />
+    <meta property="og:title" content="Vahan Sahakyan | CV" />
+    <meta property="og:description" content="Senior Backend Engineer: distributed, event-driven systems in Go, Java and TypeScript." />
+    <meta property="og:image" content="https://vahan-sahakyan.github.io/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
-    <div class="cover">
-      <!--  -->
-      <div class="a4-grid">
-        <div class="left"></div>
-        <div class="middle">
-          <!-- The A4 CV Paper -->
-          <a
-            id="download"
-            href="./download/VAHAN_SAHAKYAN_SR_SWE.pdf"
-            download="VAHAN_SAHAKYAN_SR_SWE"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="{2}"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              />
-            </svg>
-            <span>Download PDF</span>
-          </a>
+    <nav class="bar" aria-label="CV">
+      <a class="bar-id" href="https://vahan-sahakyan.github.io/">
+        <img src="https://vahan-sahakyan.github.io/images/hs-image-2.webp" width="240" height="240" alt="" />
+        <span class="bar-name">Vahan Sahakyan</span>
+        <span class="bar-role">Resume</span>
+      </a>
+      <div class="bar-actions">
+        <a class="btn btn-ghost" href="https://vahan-sahakyan.github.io/" aria-label="Website">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 8h-11M7 3.5 2.5 8 7 12.5" /></svg>
+          <span>Website</span>
+        </a>
+        <a class="btn btn-primary" id="download" href="./download/VAHAN_SAHAKYAN_SR_SWE.pdf" download="VAHAN_SAHAKYAN_SR_SWE.pdf">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8M4.5 7 8 10.5 11.5 7M2.5 13.5h11" /></svg>
+          <span><span class="hide-sm">Download </span>PDF</span>
+        </a>
+      </div>
+    </nav>
 
-          <div class="a4">
-            <div class="glass">
-              <a href="https://linkedin.com/in/vahan-sahakyan" target="_blank">
-                <svg
-                  class="ln-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  width="48px"
-                  height="48px"
-                  viewBox="0 0 48 48"
-                >
-                  <g>
-                    <path
-                      d="M46,0H2C0.9,0,0,0.9,0,2v44c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2V2C48,0.9,47.1,0,46,0z M14.2,40.9H7.1V18
-                    h7.1V40.9z M10.7,14.9c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1c2.3,0,4.1,1.8,4.1,4.1C14.8,13,13,14.9,10.7,14.9z M40.9,40.9
-                    h-7.1V29.8c0-2.7,0-6.1-3.7-6.1c-3.7,0-4.3,2.9-4.3,5.9v11.3h-7.1V18h6.8v3.1h0.1c0.9-1.8,3.3-3.7,6.7-3.7c7.2,0,8.5,4.7,8.5,10.9
-                    V40.9z"
-                    />
-                  </g>
-                </svg>
-              </a>
-              <a href="https://github.com/vahan-sahakyan" target="_blank">
-                <svg
-                  class="gh-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  width="48px"
-                  height="48px"
-                  viewBox="0 0 48 48"
-                >
-                  <g>
-                    <path
-                      d="M24,0.6c-13.3,0-24,10.7-24,24c0,10.6,6.9,19.6,16.4,22.8
-                    c1.2,0.2,1.6-0.5,1.6-1.2c0-0.6,0-2.1,0-4.1c-6.7,1.5-8.1-3.2-8.1-3.2c-1.1-2.8-2.7-3.5-2.7-3.5c-2.2-1.5,0.2-1.5,0.2-1.5
-                    c2.4,0.2,3.7,2.5,3.7,2.5c2.1,3.7,5.6,2.6,7,2c0.2-1.6,0.8-2.6,1.5-3.2c-5.3-0.6-10.9-2.7-10.9-11.9c0-2.6,0.9-4.8,2.5-6.4
-                    c-0.2-0.6-1.1-3,0.2-6.4c0,0,2-0.6,6.6,2.5c1.9-0.5,4-0.8,6-0.8c2,0,4.1,0.3,6,0.8c4.6-3.1,6.6-2.5,6.6-2.5c1.3,3.3,0.5,5.7,0.2,6.4
-                    c1.5,1.7,2.5,3.8,2.5,6.4c0,9.2-5.6,11.2-11,11.8c0.9,0.7,1.6,2.2,1.6,4.4c0,3.2,0,5.8,0,6.6c0,0.6,0.4,1.4,1.7,1.2
-                    C41.1,44.2,48,35.2,48,24.6C48,11.3,37.3,0.6,24,0.6z"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </div>
-            <div class="wrapper">
-              <header>
-                <div class="title">
-                  <h1 class="full-name">Vahan Sahakyan</h1>
-                  <p class="headline">Senior Backend Engineer</p>
-                </div>
-              </header>
-              <section class="pdf-mode-contacts">
-                <div class="pdf-mode-contacts__row">Yerevan, Armenia</div>
-                <div class="pdf-mode-contacts__row">
-                  |
-                  <a href="tel:+37495276827">+374 95 276827</a>
-                </div>
-                <div class="pdf-mode-contacts__row">
-                  |
-                  <a href="mailto:vahan.codes@gmail.com">vahan.codes@gmail.com</a>
-                </div>
-                <div class="pdf-mode-contacts__row">
-                  |
-                  <a href="https://t.me/vahan_sahakyan" target="_blank">t.me/vahan_sahakyan</a>
-                </div>
-                <div class="pdf-mode-contacts__row">
-                  |
-                  <a href="https://linkedin.com/in/vahan-sahakyan" target="_blank">linkedin.com/in/vahan-sahakyan</a>
-                </div>
-                <div class="pdf-mode-contacts__row">
-                  |
-                  <a href="https://github.com/vahan-sahakyan" target="_blank">github.com/vahan-sahakyan</a>
-                </div>
-              </section>
-              <div class="content">
-                <!-- SUMMARY START -->
-                <h2>SUMMARY</h2>
-                <p class="about">
-                  Senior Backend Engineer with nearly 5 years building
-                  distributed, event-driven systems in Go (Golang), Java and
-                  TypeScript for Forbes and Warner Music Group, using gRPC,
-                  Apache Kafka and Kubernetes on Google Cloud Platform (GCP).
-                </p>
-                <!-- SUMMARY END -->
+    <main class="desk">
+      <article class="a4">
+        <header class="head">
+          <h1 class="full-name">Vahan Sahakyan</h1>
+          <p class="headline">Senior Backend Engineer</p>
+          <p class="contacts">
+            <span>Yerevan, Armenia</span>
+            <span><span class="sep" aria-hidden="true">|</span><a href="tel:+37495276827">+374 95 27 68 27</a></span>
+            <span><span class="sep" aria-hidden="true">|</span><a href="mailto:vahan.codes@gmail.com">vahan.codes@gmail.com</a></span>
+            <span><span class="sep" aria-hidden="true">|</span><a href="https://t.me/vahan_sahakyan" target="_blank" rel="noopener">t.me/vahan_sahakyan</a></span>
+            <span><span class="sep" aria-hidden="true">|</span><a href="https://linkedin.com/in/vahan-sahakyan" target="_blank" rel="noopener">linkedin.com/in/vahan-sahakyan</a></span>
+            <span><span class="sep" aria-hidden="true">|</span><a href="https://github.com/vahan-sahakyan" target="_blank" rel="noopener">github.com/vahan-sahakyan</a></span>
+          </p>
+        </header>
 
-                <!-- SKILLS START -->
-                <div class="skills">
-                  <h2>CORE TECHNICAL SKILLS</h2>
-                  <ul>
-                    <li>
-                      <strong>Languages:</strong> Go (Golang), Java, TypeScript,
-                      JavaScript, Python, SQL, Bash
-                    </li>
-                    <li>
-                      <strong>Distributed Systems:</strong> Microservices,
-                      Event-Driven Architecture, CQRS, Event Sourcing, Go
-                      Concurrency, Caching
-                    </li>
-                    <li>
-                      <strong>APIs &amp; Frameworks:</strong> gRPC, Protocol
-                      Buffers, RESTful APIs, GraphQL, Gin, Chi, Fiber, Spring,
-                      Hibernate, JPA, Node.js, Express, FastAPI
-                    </li>
-                    <li>
-                      <strong>Messaging &amp; Streaming:</strong> Apache Kafka,
-                      Redpanda, Google Pub/Sub, WebSockets
-                    </li>
-                    <li>
-                      <strong>Databases:</strong> MongoDB, PostgreSQL, Redis,
-                      ScyllaDB, ClickHouse, Elasticsearch, MySQL, Memcached, Neo4j
-                      (Cypher)
-                    </li>
-                    <li>
-                      <strong>Cloud &amp; Infrastructure:</strong> GCP, AWS,
-                      Kubernetes (K8s), Docker, Helm, Argo CD, Argo Events, Argo
-                      Workflows, CI/CD, Fastly, Varnish
-                    </li>
-                    <li>
-                      <strong>Observability:</strong> Prometheus, Grafana,
-                      OpenTelemetry, Jaeger, Tempo, Loki, Distributed Tracing
-                    </li>
-                    <li>
-                      <strong>Tools:</strong> Git, Linux, SonarQube, Jest, Nx,
-                      JFrog Artifactory; Frontend: React, Angular
-                    </li>
-                  </ul>
-                </div>
-                <!-- SKILLS END -->
+        <section class="about">
+          <h2><span class="tag">SUMMARY</span></h2>
+          <p>
+            Senior Backend Engineer with nearly 5 years building distributed, event-driven systems in Go (Golang),
+            Java and TypeScript for Forbes and Warner Music Group, using gRPC, Apache Kafka and Kubernetes on Google
+            Cloud Platform (GCP).
+          </p>
+        </section>
 
-                <!-- EXPERIENCE START -->
-                <div class="experience">
-                  <h2>EXPERIENCE</h2>
+        <section class="skills">
+          <h2><span class="tag">CORE TECHNICAL SKILLS</span></h2>
+          <ul>
+            <li><strong>Languages:</strong> Go (Golang), Java, TypeScript, JavaScript, Python, SQL, Bash</li>
+            <li>
+              <strong>Distributed Systems:</strong> Microservices, Event-Driven Architecture, CQRS, Event Sourcing, Go
+              Concurrency, Caching
+            </li>
+            <li>
+              <strong>APIs &amp; Frameworks:</strong> gRPC, Protocol Buffers, RESTful APIs, GraphQL, Gin, Chi, Fiber,
+              Spring, Hibernate, JPA, Node.js, Express, FastAPI
+            </li>
+            <li><strong>Messaging &amp; Streaming:</strong> Apache Kafka, Redpanda, Google Pub/Sub, WebSockets</li>
+            <li>
+              <strong>Databases:</strong> MongoDB, PostgreSQL, Redis, ScyllaDB, ClickHouse, Elasticsearch, MySQL,
+              Memcached, Neo4j (Cypher)
+            </li>
+            <li>
+              <strong>Cloud &amp; Infrastructure:</strong> GCP, AWS, Kubernetes (K8s), Docker, Helm, Argo CD, Argo
+              Events, Argo Workflows, CI/CD, Fastly, Varnish
+            </li>
+            <li>
+              <strong>Observability:</strong> Prometheus, Grafana, OpenTelemetry, Jaeger, Tempo, Loki, Distributed
+              Tracing
+            </li>
+            <li><strong>Tools:</strong> Git, Linux, SonarQube, Jest, Nx, JFrog Artifactory; Frontend: React, Angular</li>
+          </ul>
+        </section>
 
-                  <!-- 5 -->
-                  <h3 class="experience-name">
-                    Optimum Partners (Client: Forbes) | Senior Backend Engineer
-                    <span class="job-meta">| Yerevan, Armenia | Jan 2025 - Present</span>
-                  </h3>
-                  <ul>
-                    <li>
-                      Architected distributed Go and TypeScript services for
-                      Forbes Vetted: search, cursor pagination, scraping and data
-                      pipelines.
-                    </li>
-                    <li>
-                      Decoupled synchronous core services by introducing
-                      event-driven architecture on Kafka-compatible brokers with
-                      async consumers.
-                    </li>
-                    <li>
-                      Designed production MongoDB and Redis data models, indexes
-                      and caching layers, with scaling and consistency patterns.
-                    </li>
-                    <li>
-                      Ran multi-tenant Kubernetes on GCP (prod, staging, dev) with
-                      namespace isolation and GitOps via Argo CD and Argo Events.
-                    </li>
-                    <li>
-                      Led backend delivery on Nexus initiatives from requirements
-                      to phased rollouts; mentored engineers on backend and
-                      system design.
-                    </li>
-                  </ul>
+        <section class="experience">
+          <h2><span class="tag">EXPERIENCE</span></h2>
 
-                  <!-- 4 -->
-                  <h3 class="experience-name">
-                    Optimum Partners (Client: Forbes) | Full Stack Software
-                    Engineer
-                    <span class="job-meta">| Yerevan, Armenia | May 2024 - Jan 2025</span>
-                  </h3>
-                  <ul>
-                    <li>
-                      Built Go and TypeScript backend services and integrations
-                      for Bertie CMS and Vetted: search, content pipelines and
-                      data processing.
-                    </li>
-                    <li>
-                      Integrated the Zephr subscription and Cordial messaging
-                      platforms; streamlined communication between local npm
-                      registries.
-                    </li>
-                    <li>
-                      Delivered features at 100% code coverage; documented
-                      designs and runbooks in Markdown, Slab and Loom.
-                    </li>
-                  </ul>
-
-                  <!-- 3 -->
-                  <h3 class="experience-name">
-                    Datafoundry | Full Stack Software Engineer
-                    <span class="job-meta">| Yerevan, Armenia | Sep 2023 - May 2024</span>
-                  </h3>
-                  <ul>
-                    <li>
-                      Led large-scale refactoring of Go and Java microservices,
-                      defining service boundaries and decoupling legacy
-                      components.
-                    </li>
-                    <li>
-                      Raised unit test coverage to 70%+ and passed SonarQube
-                      quality gates by rolling out linting across a polyglot
-                      codebase.
-                    </li>
-                    <li>
-                      Built reusable Go packages and TypeScript libraries shared
-                      across DF mSignal AI, Literature Monitor and mSafety AI.
-                    </li>
-                  </ul>
-
-                  <!-- 2 -->
-                  <h3 class="experience-name">
-                    NWSLAB (Client: Warner Music Group) | Software Engineer
-                    <span class="job-meta">| Yerevan, Armenia | Oct 2022 - Sep 2023</span>
-                  </h3>
-                  <ul>
-                    <li>
-                      Built Go and Java services and data pipelines for the ADA
-                      royalties and publishing system serving DSPs such as
-                      Spotify and Apple Music.
-                    </li>
-                    <li>
-                      Shaped system-level decisions for Go backend services in
-                      tech design reviews with the Solutions Architect.
-                    </li>
-                    <li>
-                      Defined type-safe API contracts between frontend and
-                      backend for a team distributed across 6 countries.
-                    </li>
-                  </ul>
-
-                  <!-- 1 -->
-                  <h3 class="experience-name">
-                    Datafoundry | Software Engineer
-                    <span class="job-meta">| Yerevan, Armenia | Mar 2022 - Oct 2022</span>
-                  </h3>
-                  <ul>
-                    <li>
-                      Built a multi-tenant analytics dashboard with role-based
-                      access control (4 user roles) for DF mSignal AI on Go and
-                      Java backends.
-                    </li>
-                    <li>
-                      Refactored legacy codebases following SoC and DRY
-                      principles and reworked state management, improving
-                      client performance.
-                    </li>
-                  </ul>
-                </div>
-                <!-- EXPERIENCE END -->
-
-                <!-- PROJECTS START -->
-                <div class="projects">
-                  <h2>FEATURED PROJECTS</h2>
-                  <h3 class="experience-name">
-                    Distributed Social Network (Go, gRPC, Redpanda)
-                    <span class="job-meta">| <a href="https://github.com/vahan-sahakyan/distributed-social-network" target="_blank">github.com/vahan-sahakyan/distributed-social-network</a></span>
-                  </h3>
-                  <ul>
-                    <li>
-                      Built 11 Go microservices over gRPC with Redpanda (Kafka)
-                      event streaming, a CQRS feed and a ClickHouse event store.
-                    </li>
-                    <li>
-                      Database-per-service persistence (ScyllaDB, PostgreSQL,
-                      Valkey, Elasticsearch), Keycloak OIDC, deployed to
-                      Kubernetes on AWS via Helm and Argo CD; observed with
-                      OpenTelemetry, Tempo, Loki, Prometheus and Grafana.
-                    </li>
-                  </ul>
-                </div>
-                <!-- PROJECTS END -->
-
-                <!-- CERTIFICATIONS START -->
-                <div class="certifications">
-                  <h2>CERTIFICATIONS &amp; MENTORSHIP</h2>
-                  <ul>
-                    <li>
-                      Neo4j Certified Professional (NCP) | Courses: CKA
-                      (KodeKloud), MongoDB: Indexing Design Fundamentals, Claude
-                      with Google Cloud's Vertex AI
-                    </li>
-                    <li>
-                      Mentor, TechX (Jun - Aug 2025): interviewed and trained
-                      engineers
-                    </li>
-                    <li>
-                      C++ Programming mentorship - Believer Programmers' Club of
-                      Armenia, mentor Artak Yenokyan (Siemens EDA), 2018 - 2019
-                    </li>
-                  </ul>
-                </div>
-                <!-- CERTIFICATIONS END -->
-
-                <!-- EDUCATION START -->
-                <div class="education">
-                  <h2>EDUCATION</h2>
-                  <ul>
-                    <li>
-                      <strong>Bachelor of Performing Arts (BPA)</strong> -
-                      Yerevan Komitas State Conservatory
-                      <span class="date">2021</span>
-                    </li>
-                    <li>
-                      <strong>Bachelor of Commerce (BCom), Tourism and
-                        Hospitality Management</strong>
-                      - Yerevan State College of Humanities
-                      <span class="date">2014</span>
-                    </li>
-                  </ul>
-                </div>
-                <!-- EDUCATION END -->
-
-                <!-- LANGUAGES START -->
-                <div class="languages">
-                  <h2>LANGUAGES</h2>
-                  <ul>
-                    <li>
-                      English (Full Professional) | Russian (Full Professional) |
-                      Armenian (Native) | Japanese (Elementary)
-                    </li>
-                  </ul>
-                </div>
-                <!-- LANGUAGES END -->
-              </div>
-            </div>
+          <h3 class="experience-name">
+            Optimum Partners (Client: Forbes)
+            <span class="job-meta"><span class="sep" aria-hidden="true">|</span> Yerevan, Armenia | May 2024 - Present</span>
+          </h3>
+          <div class="roles">
+            <h4 class="role-name is-current">
+              Senior Backend Engineer
+              <span class="job-meta"><span class="sep" aria-hidden="true">|</span> Jan 2025 - Present</span>
+            </h4>
+            <ul>
+              <li>
+                Architected distributed Go and TypeScript services for Forbes Vetted: search, cursor pagination, scraping
+                and data pipelines.
+              </li>
+              <li>
+                Decoupled synchronous core services by introducing event-driven architecture on Kafka-compatible brokers
+                with async consumers.
+              </li>
+              <li>
+                Designed production MongoDB and Redis data models, indexes and caching layers, with scaling and
+                consistency patterns.
+              </li>
+              <li>
+                Ran multi-tenant Kubernetes on GCP (prod, staging, dev) with namespace isolation and GitOps via Argo CD and
+                Argo Events.
+              </li>
+              <li>
+                Led backend delivery on Nexus initiatives from requirements to phased rollouts; mentored engineers on
+                backend and system design.
+              </li>
+            </ul>
+            <h4 class="role-name">
+              Full Stack Software Engineer
+              <span class="job-meta"><span class="sep" aria-hidden="true">|</span> May 2024 - Jan 2025</span>
+            </h4>
+            <ul>
+              <li>
+                Built Go and TypeScript backend services and integrations for Bertie CMS and Vetted: search, content
+                pipelines and data processing.
+              </li>
+              <li>
+                Integrated the Zephr subscription and Cordial messaging platforms; streamlined communication between local
+                npm registries.
+              </li>
+              <li>Delivered features at 100% code coverage; documented designs and runbooks in Markdown, Slab and Loom.</li>
+            </ul>
           </div>
 
-          <!--  -->
-        </div>
-        <div class="right"></div>
-      </div>
-      <!--  -->
+          <h3 class="experience-name">
+            Datafoundry | Full Stack Software Engineer
+            <span class="job-meta"><span class="sep" aria-hidden="true">|</span> Yerevan, Armenia | Sep 2023 - May 2024</span>
+          </h3>
+          <ul>
+            <li>
+              Led large-scale refactoring of Go and Java microservices, defining service boundaries and decoupling
+              legacy components.
+            </li>
+            <li>
+              Raised unit test coverage to 70%+ and passed SonarQube quality gates by rolling out linting across a
+              polyglot codebase.
+            </li>
+            <li>
+              Built reusable Go packages and TypeScript libraries shared across DF mSignal AI, Literature Monitor and
+              mSafety AI.
+            </li>
+          </ul>
 
-      <footer></footer>
-    </div>
+          <h3 class="experience-name">
+            NWSLAB (Client: Warner Music Group) | Software Engineer
+            <span class="job-meta"><span class="sep" aria-hidden="true">|</span> Yerevan, Armenia | Oct 2022 - Sep 2023</span>
+          </h3>
+          <ul>
+            <li>
+              Built Go and Java services and data pipelines for the ADA royalties and publishing system serving DSPs
+              such as Spotify and Apple Music.
+            </li>
+            <li>Shaped system-level decisions for Go backend services in tech design reviews with the Solutions Architect.</li>
+            <li>Defined type-safe API contracts between frontend and backend for a team distributed across 6 countries.</li>
+          </ul>
+
+          <h3 class="experience-name">
+            Datafoundry | Software Engineer
+            <span class="job-meta"><span class="sep" aria-hidden="true">|</span> Yerevan, Armenia | Mar 2022 - Oct 2022</span>
+          </h3>
+          <ul>
+            <li>
+              Built a multi-tenant analytics dashboard with role-based access control (4 user roles) for DF mSignal AI
+              on Go and Java backends.
+            </li>
+            <li>
+              Refactored legacy codebases following SoC and DRY principles and reworked state management, improving
+              client performance.
+            </li>
+          </ul>
+        </section>
+
+        <section class="projects">
+          <h2><span class="tag">FEATURED PROJECTS</span></h2>
+          <h3 class="experience-name">
+            Distributed Social Network (Go, gRPC, Redpanda)
+            <span class="job-meta"
+              ><span class="sep" aria-hidden="true">|</span>
+              <a href="https://github.com/vahan-sahakyan/distributed-social-network" target="_blank" rel="noopener"
+                >github.com/vahan-sahakyan/distributed-social-network</a
+              ></span
+            >
+          </h3>
+          <ul>
+            <li>
+              Built 11 Go microservices over gRPC with Redpanda (Kafka) event streaming, a CQRS feed and a ClickHouse
+              event store.
+            </li>
+            <li>
+              Database-per-service persistence (ScyllaDB, PostgreSQL, Valkey, Elasticsearch), Keycloak OIDC, deployed to
+              Kubernetes on AWS via Helm and Argo CD; observed with OpenTelemetry, Tempo, Loki, Prometheus and Grafana.
+            </li>
+          </ul>
+        </section>
+
+        <section class="certifications">
+          <h2><span class="tag">CERTIFICATIONS &amp; MENTORSHIP</span></h2>
+          <ul>
+            <li>
+              Neo4j Certified Professional (NCP) | Courses: CKA (KodeKloud), MongoDB: Indexing Design Fundamentals,
+              Claude with Google Cloud's Vertex AI
+            </li>
+            <li>Mentor, TechX (Jun - Aug 2025): interviewed and trained engineers</li>
+          </ul>
+        </section>
+
+        <section class="education">
+          <h2><span class="tag">EDUCATION</span></h2>
+          <ul>
+            <li>
+              <strong>Bachelor of Performing Arts (BPA)</strong> - Yerevan Komitas State Conservatory
+              <span class="date">2021</span>
+            </li>
+            <li>
+              <strong>C++ Programming mentorship</strong> - Believer Programmers' Club of Armenia, mentored by Artak
+              Yenokyan (Siemens EDA)
+              <span class="date">2018 - 2019</span>
+            </li>
+            <li>
+              <strong>Bachelor of Commerce (BCom), Tourism and Hospitality Management</strong>
+              - Yerevan State College of Humanities
+              <span class="date">2014</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="languages">
+          <h2><span class="tag">LANGUAGES</span></h2>
+          <ul>
+            <li>
+              English (Full Professional) | Russian (Full Professional) | Armenian (Native) | Japanese (Elementary)
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
