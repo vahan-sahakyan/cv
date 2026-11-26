@@ -194,6 +194,9 @@ svg {
 .btn-ghost:hover svg {
   transform: translateX(-3px);
 }
+.btn-open:hover svg {
+  transform: translate(2px, -2px);
+}
 .btn-primary {
   --btn-bg: var(--dk-accent);
   --btn-fg: #0c0c0c;
